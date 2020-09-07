@@ -1,1 +1,9 @@
 @import "mixins";
+
+@function img($filename) {
+  @return url("../img/#{$filename}");
+};
+
+//color variables
+$primary-color: #ffffff;
+$brand-color: #434CCC;
