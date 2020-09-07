@@ -1,0 +1,53 @@
+@import "variables";
+
+.header__navigation {
+  @include reset-nav;
+}
+
+.list--anchor {
+  display: block;
+  padding: 1rem;
+  text-transform: capitalize;
+  color: $primary-color;
+  cursor: pointer;
+}
+
+body [type="checkbox"]::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon_menu.svg");
+  opacity: 1;
+}
+
+.header__navigation {
+  padding: 1rem;
+  background-color: #222222;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100vh;
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
+  transform: translate(-210%);
+  transition: transform 0.5s;
+}
+
+body [type="checkbox"]:checked ~ .header__navigation {
+  transform: translateX(0);
+}
+
+body [type="checkbox"]:checked ~ .header__navigation label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,.25);
+}
