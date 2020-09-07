@@ -85,7 +85,7 @@
         <source srcset="./images/ripples_sm.jpg" media="(min-width: 320px)">
         <source srcset="./images/ripples_md.jpg" media="(min-width: 720px)">
         <source srcset="./images/ripples_lg.jpg" media="(min-width: 1120px)">
-        <img src="./images/ripples_lg.jpg" alt=""ripples>
+        <img src="./images/ripples_lg.jpg" alt="ripples">
       </picture>
       <picture>
         <source srcset="./images/dunes_sm-tiny.jpg" media="(min-width: 320px)">
@@ -195,13 +195,131 @@
       </div>
     </article>
 
-    <article>
-      <header></header>
-    </article>
-
-    <article>
-      <header></header>
+    <article class="article__updates">
+      <div class="article__updates--container container">
+        <header class="article__updates__header">
+          <h3 class="article__updates__heading">
+            Stay up-to-date with my updates
+          </h3>
+          <p>
+            latest
+          </p>
+          <div class="article__updates__form-subscribe">
+            <form action="." class="form-subscribe">
+              <fieldset>
+                <label for="email">Your email address</label>
+                <input type="email" name="email" id="email">
+                <button type="submit" class="btn btn-sumbit">subscribe</button>
+              </fieldset>
+            </form>
+          </div>
+        </header>
+      </div>
     </article>
   </main>
+
+  <footer class="main__footer">
+    <div class="footer--container container">
+      <div class="main__footer__aboutthewriter">
+        <h2>
+          Photograph
+        </h2>
+        <div class="personal-website">
+          <cite>
+            The personal website of Jesse McJessesen, professional photographer.
+          </cite>
+        </div>
+
+        <div class="footer__media">
+          <ul class="mineral__media--lists">
+            <li class="mineral__media--list">
+              <a href="/facebook" class="mineral__media--anchor facebook">
+                facebook
+              </a>
+            </li>
+            <li class="mineral__media--list">
+              <a href="/twitter" class="mineral__media--anchor twitter">
+                twitter
+              </a>
+            </li>
+            <li class="mineral__media--list">
+              <a href="/instagram" class="mineral__media--anchor instagram">
+                instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__navigation--container">
+        <nav class="footer__navigation">
+          <ul class="footer__navigation__lists">
+            <li class="footer__navigation__list">
+              <a href="/about" class="footer__navigation--anchor anchor about">
+                About
+              </a>
+            </li>
+            <li class="footer__navigation__list">
+              <a href="/portfolio" class="footer__navigation--anchor anchor portfolio">
+                portfolio
+              </a>
+            </li>
+            <li class="footer__navigation__list">
+              <a href="/blog" class="footer__navigation--anchor anchor blog">
+                Blog
+              </a>
+            </li>
+            <li class="footer__navigation__list">
+              <a href="/contact" class="footer__navigation--anchor anchor contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__experience">
+        <ul class="footer__experience--lists">
+          <li class="footer__experience--list">
+            <picture>
+              <source srcset="./images/woman_sm-tiny.jpg" media="(min-width:320px)">
+              <img src="./images/woman_sm-tiny.jpg" alt="woman">
+            </picture>
+            <div class="footer__picture--description">
+              <p class="footer__picture--description__paragraph">
+                Rust, pumpkin, tans, and spices.
+              </p>
+              <time datetime="2019-07-15">July 15 2019</time>
+            </div>
+          </li>
+          <li class="footer__experience--list">
+            <picture>
+              <source srcset="./images/passage_sm.jpg" media="(min-width:320px)">
+              <img src="./images/passage_sm.jpg" alt="passage">
+            </picture>
+            <div class="footer__picture--description">
+              <p class="footer__picture--description__paragraph">
+                Experiencing Japan
+              </p>
+              <time datetime="2019-07-10">July 10 2019</time>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__componants">
+        <div class="creator-modifier">
+          <small>Created by Laaqiq, modified by Onja</small>
+        </div>
+        <div class="copyright">
+          <small>&copy PHOTOGRAF, 
+            <time datetime="2020">
+              2020
+            </time>. All rights reserved.
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
