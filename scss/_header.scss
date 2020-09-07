@@ -1,1 +1,15 @@
 @import "variables";
+
+.header {
+  background-color: $brand-color;
+}
+
+.header__heading {
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.header__container {
+  @include flex-row;
+  align-items: center;
+}
