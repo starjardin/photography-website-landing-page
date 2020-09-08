@@ -13,19 +13,48 @@
 
 .article__mineral__main--paragraph.place {
   color: $black-color;
+  padding-bottom: calc(100% * 48/ 375);
+  line-height: 32px;
+  font-size: 18px;
 }
 
 .article__mineral__main--paragraph.experience {
   color: $half_black;
+  padding-bottom: calc(100% * 48/ 375);
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .mineral__media--lists {
   @include flex-row;
   @include reset-link-list;
+  max-width: calc(100% * 105 / 375);
 }
 
-.mineral__media--anchor.facebook {}
+.mineral__media--anchor span {
+  transform: translateX(-99999%);
+  opacity: 0;
+}
 
-.mineral__media--anchor.twitter {}
+.mineral__media--anchor {
+  display: block;
+  width: 20px;
+  @include center-background;
+}
 
-.mineral__media--anchor.instagram {}
+.mineral__media--anchor.facebook {
+  background-image: img("icon_facebook.svg");
+  background-size: contain;
+}
+
+.mineral__media--anchor.twitter {
+  background-image:img("icon_twitter.svg");
+}
+
+.mineral__media--anchor.instagram {
+  background-image: img("icon_instagram.svg");
+}
