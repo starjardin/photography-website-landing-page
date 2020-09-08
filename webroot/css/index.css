@@ -277,13 +277,32 @@ img {
 
 .mineral__media--anchor.facebook {
   background-image: url("../images/icon_facebook.svg");
-  background-size: contain; }
+  background-size: contain;
+  transition: .3s; }
 
 .mineral__media--anchor.twitter {
-  background-image: url("../images/icon_twitter.svg"); }
+  background-image: url("../images/icon_twitter.svg");
+  background-size: contain;
+  transition: .3s; }
 
 .mineral__media--anchor.instagram {
-  background-image: url("../images/icon_instagram.svg"); }
+  background-image: url("../images/icon_instagram.svg");
+  transition: .3s; }
+
+.mineral__media--anchor.facebook:hover {
+  background-image: url("../images/icon_facebook_hover.svg");
+  transform: scale(1.5);
+  transition: .3s; }
+
+.mineral__media--anchor.twitter:hover {
+  background-image: url("../images/icon_twitter_hover.svg");
+  transform: scale(1.5);
+  transition: .3s; }
+
+.mineral__media--anchor.instagram:hover {
+  background-image: url("../images/icon_instagram_hover.svg");
+  transform: scale(1.5);
+  transition: .3s; }
 
 .article__updates {
   background-color: #FFDD78;
