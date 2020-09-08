@@ -12,13 +12,27 @@
   cursor: pointer;
 }
 
-body [type="checkbox"]::before {
-  content: "";
+body [type="checkbox"][name="menu"] {
+  border: none;
+  background-color: $brand-color;
+}
+
+[for="menu"] {
+  order: 3;
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url("../images/icon_menu.svg");
-  opacity: 1;
+  margin-inline-end: $margin-inline_header;
+  background-image: img("icon_menu.svg");
+}
+
+label > span {
+  opacity: 0;
+}
+
+[type="checkbox"][name="menu"] {
+  order: 2;
+  opacity: 0;
 }
 
 .header__navigation {
@@ -50,4 +64,15 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   height: 100vh;
   width: 100vw;
   background: rgba(0,0,0,.25);
+}
+
+//here is going back to portfolio
+.back-to-portfolio {
+display: block;
+margin-top: 30px;
+padding-left: 25px;
+@include center-background;
+background-size: contain;
+background-position: left;
+background-image: img("icon_arrow_left.svg");
 }
