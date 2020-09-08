@@ -1,5 +1,9 @@
 @import "variables";
 
+.article__image-slider__heading {
+  display: none;
+}
+
 .images--container > picture {
   margin: 0;
 }
