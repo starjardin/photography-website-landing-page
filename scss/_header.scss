@@ -7,6 +7,7 @@
 .header__heading {
   text-transform: uppercase;
   color: $primary-color;
+  margin-inline-start: $margin-inline_header;
 }
 
 .masthead--container {
