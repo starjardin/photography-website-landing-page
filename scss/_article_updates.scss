@@ -1,0 +1,59 @@
+@import "variables";
+
+.article__updates {
+  background-color: $secondary-color;
+  padding-top: calc(100% * 65 / 375);
+  padding-bottom: calc(100% * 54 / 375);
+  padding-inline: $margin-inline;
+}
+
+.article__updates__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__updates__heading {
+  order: 2;
+  font-family: "DM Serif Display";
+  line-height: 48px;
+  font-size: 40px;
+}
+
+.latest {
+  order: 1;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+[for="email"] {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.article__updates__form-feildeset {
+  border: none;
+  padding: 0;
+}
+
+[name="email"],
+.btn.btn-sumbit {
+  display: block;
+  height: 48px;
+  font-family: "DM sans";
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #DADADA;
+}
+
+[name="email"] {
+  width: 100%;
+}
+
+.btn.btn-sumbit {
+  background-color: $brand-color;
+  width: calc(100% * 170 / 375);
+  cursor: pointer;
+  margin-top: calc(100% * 17 / 375);
+}
