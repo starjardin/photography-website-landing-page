@@ -4,6 +4,11 @@
   background-color: $brand-color;
 }
 
+.header__container {
+  @include flex-row;
+  align-items: center;
+}
+
 .header__heading {
   text-transform: uppercase;
   color: $primary-color;
@@ -11,10 +16,29 @@
 }
 
 .masthead--container {
-  max-width: 100%;
+  // max-width: 100%;
 }
 
-.header__container {
-  @include flex-row;
-  align-items: center;
+//masthead
+
+.masthead__heading,
+.masthead__description {
+  font-style: normal;
+  font-weight: normal;
+  color: $black-color;
+  padding-inline-start: $margin-inline;
+}
+
+.masthead__heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 64px;
+}
+
+.masthead__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
 }
