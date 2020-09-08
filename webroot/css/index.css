@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "DM sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans-Regular"), local("DM sans Regular"), local("DM sans-Bold"), local("DM sans Bold"), url("../fonts/dm_sans_400}.woff") format("woff"), url("../fonts/dm_sans_500.woff") format("woff"), url("../fonts/dm_sans_700.woff") format("woff"), url("../fonts/dm_sans_400}.woff2") format("woff2"), url("../fonts/dm_sans_500.woff2") format("woff2"), url("../fonts/dm_sans_700.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "DM sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM sans-Regular"), local("DM sans Regular"), local("DM sans-Bold"), local("DM sans Bold"), url("../fonts/dm_sans_400}.woff") format("woff"), url("../fonts/dm_sans_500.woff") format("woff"), url("../fonts/dm_sans_700.woff") format("woff"), url("../fonts/dm_sans_400}.woff2") format("woff2"), url("../fonts/dm_sans_500.woff2") format("woff2"), url("../fonts/dm_sans_700.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "DM sans";
+  font-weight: 500;
+  font-style: normal;
+  src: local("DM sans-Regular"), local("DM sans Regular"), local("DM sans-Bold"), local("DM sans Bold"), url("../fonts/dm_sans_400}.woff") format("woff"), url("../fonts/dm_sans_500.woff") format("woff"), url("../fonts/dm_sans_700.woff") format("woff"), url("../fonts/dm_sans_400}.woff2") format("woff2"), url("../fonts/dm_sans_500.woff2") format("woff2"), url("../fonts/dm_sans_700.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "DM serif Display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM serif Display-Regular"), local("DM serif Display Regular"), local("DM serif Display-Bold"), local("DM serif Display Bold"), url("../fonts/dm_serif_display_400.woff") format("woff"), url("../fonts/dm_serif_display_400.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "DM serif Display";
+  font-weight: 400;
+  font-style: italic;
+  src: local("DM serif Display-Regular"), local("DM serif Display Regular"), local("DM serif Display-Bold"), local("DM serif Display Bold"), url("../fonts/dm_serif_display_400.woff") format("woff"), url("../fonts/dm_serif_display_400.woff2") format("woff2"); }
+
+html {
+  background-color: rgba(67, 76, 204, 0.05);
+  font-family: "DM sans";
+  font-weight: 400; }
+
+.header {
+  background-color: #434CCC; }
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__heading {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-inline-start: calc(100% * 15 / 375); }
+
+.masthead__heading,
+.masthead__description {
+  font-style: normal;
+  color: #000000;
+  padding-inline-start: calc(100% * 15 / 375); }
+
+.masthead__heading {
+  font-weight: 400;
+  font-family: "DM serif Display";
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 64px; }
+
+.masthead__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px; }
+
+.header__navigation ul {
+  padding: 0; }
+
+.header__navigation ul > li {
+  list-style: none; }
+
+.header__navigation ul > li > a {
+  text-decoration: none; }
+
+.list--anchor {
+  display: block;
+  padding: 1rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer; }
+
+body [type="checkbox"][name="menu"] {
+  border: none;
+  background-color: #434CCC; }
+
+[for="menu"] {
+  order: 3;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-inline-end: calc(100% * 15 / 375);
+  background-image: url("../images/icon_menu.svg"); }
+
+label > span {
+  opacity: 0; }
+
+[type="checkbox"][name="menu"] {
+  order: 2;
+  opacity: 0; }
+
+.header__navigation {
+  padding: 1rem;
+  background-color: #222222;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100vh;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translate(-210%);
+  transition: transform 0.5s; }
+
+body [type="checkbox"]:checked ~ .header__navigation {
+  transform: translateX(0); }
+
+body [type="checkbox"]:checked ~ .header__navigation label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.25); }
+
+.back-to-portfolio {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-inline-start: calc(100% * 15 / 375);
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: 14px;
+  background-position: left;
+  background-image: url("../images/icon_arrow_left.svg");
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5); }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.images--container > picture {
+  margin: 0; }
+
+.images {
+  padding-inline: calc(100% * 15 / 375);
+  position: relative;
+  padding-bottom: calc(100% * 85 / 375);
+  overflow: hidden; }
+
+.images picture > img {
+  border-radius: 5px;
+  margin: 0; }
+
+.pictures-container {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  padding-top: 10px; }
+
+.pictures-container picture {
+  width: calc(100% * 137 / 375);
+  height: calc(100% * 85 / 375); }
+
+.pictures-container picture:not(:nth-of-type(1)) {
+  opacity: .5; }
+
+.stairs {
+  margin-inline: 9px; }
+
+.pictures-container > picture:nth-of-type(3) ~ * {
+  display: none; }
+
+@media (min-width: 600px) {
+  .pictures-container > picture:nth-of-type(3) ~ * {
+    display: block; }
+  .images {
+    padding-bottom: 0; }
+  .pictures-container {
+    display: flex;
+    position: initial;
+    width: 100%;
+    padding-top: 10px; }
+  .pictures-container {
+    display: flex; }
+  .stairs {
+    margin-inline: 0; }
+  .pictures-container picture:not(:nth-last-of-type(1)) {
+    margin-inline-end: 9px; } }
