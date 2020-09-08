@@ -1,0 +1,31 @@
+@import "variables";
+
+.article__mineral {
+  padding-inline: $margin-inline;
+}
+
+.article__mineral__heading {
+  font-family: "DM serf Display";
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.article__mineral__main--paragraph.place {
+  color: $black-color;
+}
+
+.article__mineral__main--paragraph.experience {
+  color: $half_black;
+}
+
+.mineral__media--lists {
+  @include flex-row;
+  @include reset-link-list;
+}
+
+.mineral__media--anchor.facebook {}
+
+.mineral__media--anchor.twitter {}
+
+.mineral__media--anchor.instagram {}
