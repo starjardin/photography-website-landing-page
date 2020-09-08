@@ -4,8 +4,15 @@
   @return url("../images/#{$filename}");
 };
 
+$text-decoration-none : none;
+
 //color variables
 $primary-color: #ffffff;
 $brand-color: #434CCC;
 $base-background-color: rgba(67, 76, 204, 0.05);
-$margin-inline_header: calc(100% * 15 / 375);
+$margin-inline: calc(100% * 15 / 375);
+
+//fonts variables
+$normal-font-weight: normal;
+$font-size-18: 18px; 
+$font-size-16: 16px; 
