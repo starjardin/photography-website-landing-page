@@ -1,0 +1,37 @@
+@import "variables";
+
+.article__details {
+  padding-inline: $margin-inline;
+  padding-top: calc(100% * 95 / 375);
+}
+
+.article__details__heading {
+  display: none;
+}
+
+.article__details__definitions--lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article__details__definitions--lists dd,
+.article__details__definitions--lists dt {
+  line-height: 24px;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.article__details__definitions--lists dt {
+  color: $half-black;
+}
+
+.article__details__definitions--lists dd {
+  margin: 0;
+  font-weight: bold;
+  color: $black-color;
+  padding-bottom: calc(100% * 44 / 375);
+}
+
+.article__details__definition__list span {
+  display: block;
+}
