@@ -1,6 +1,71 @@
 @import "variables";
 
-.pictures--container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 50px;
+.images--container > picture {
+  margin: 0;
+}
+
+.images {
+  padding-inline: $margin-inline;
+  position: relative;
+  padding-bottom: calc(100% * 85 / 375);
+  overflow: hidden;
+ }
+
+.images picture > img {
+  border-radius: 5px;
+  margin: 0;
+}
+
+.pictures-container {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  padding-top: 10px;
+}
+
+.pictures-container picture {
+  width: calc(100% * 137 / 375);
+  height: calc(100% * 85 / 375);
+}
+
+.pictures-container picture:not(:nth-of-type(1)) {
+  opacity: .5;
+}
+
+.stairs {
+  margin-inline: 9px;
+}
+
+.pictures-container > picture:nth-of-type(3) ~ * {
+  display: none;
+}
+
+//media 
+@media (min-width: 600px) {
+  .pictures-container > picture:nth-of-type(3) ~ *  {
+    display: block;
+  }
+
+  .images {
+    padding-bottom: 0;
+  }
+
+  .pictures-container {
+    display: flex;
+    position: initial;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .pictures-container {
+    display: flex;
+  }
+
+  .stairs {
+    margin-inline: 0;
+  }
+
+  .pictures-container picture:not(:nth-last-of-type(1)) {
+    margin-inline-end: 9px;
+  }
 }
