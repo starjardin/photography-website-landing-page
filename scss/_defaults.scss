@@ -5,3 +5,23 @@ html {
   font-family: "DM sans";
   font-weight: 400;
 }
+
+.container {
+  max-width: 1164px;
+  margin: auto;
+}
+
+@media (min-width: 720px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body .masthead {
+    flex-basis: 100%;
+  }
+
+  main .article__image-slider {
+    flex-basis: 50%;
+  }
+}
