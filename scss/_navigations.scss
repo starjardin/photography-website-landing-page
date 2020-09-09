@@ -24,6 +24,7 @@ body [type="checkbox"][name="menu"] {
   height: 20px;
   margin-inline-end: $margin-inline;
   background-image: img("icon_menu.svg");
+  background-repeat: no-repeat;
 }
 
 label > span {
