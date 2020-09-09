@@ -13,6 +13,9 @@
   text-transform: uppercase;
   color: $primary-color;
   margin-inline-start: $margin-inline;
+  margin-block: calc(100% * 16 / 375);
+  line-height: 32px;
+  font-size: 24px;
 }
 
 //masthead
