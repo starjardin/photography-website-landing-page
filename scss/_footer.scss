@@ -1,0 +1,54 @@
+@import "variables";
+
+.main__footer {
+  background-color: $primary-color;
+  color: $black-color;
+  padding-inline-start: $margin-inline;
+}
+
+.main__footer__heading {
+  font-family: "DM serif Display";
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.main__footer_personal-website {}
+
+.footer__navigation {
+  @include reset-nav;
+}
+
+.footer__experience--lists {
+  @include reset-link-list;
+}
+
+.footer__experience--list { 
+  @include flex-row;
+  align-items: center;
+}
+
+.footer--picture {
+  width: calc(100% * 70 / 375);
+  height: calc(100% * 47 / 375);
+}
+
+.footer--picture > img {
+  border-radius: 5px;
+}
+
+.footer__componants {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-block: 29px;
+  color: $half-black;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.footer__navigation--anchor {
+  color: $half-black;
+}
+
+.footer__navigation--anchor:visited {
+  color: $black-color;
+}
