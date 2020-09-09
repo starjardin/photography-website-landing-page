@@ -2,6 +2,8 @@
 
 .article__mineral {
   padding-inline: $margin-inline;
+  margin-block-end: 100px;
+  margin-block-start: 61px;
 }
 
 .article__mineral__heading {
@@ -9,6 +11,7 @@
   font-weight: normal;
   font-size: 40px;
   line-height: 48px;
+  margin-bottom: 47px;
 }
 
 .article__mineral__main--paragraph.place {
