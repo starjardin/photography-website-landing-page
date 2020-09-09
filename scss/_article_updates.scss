@@ -2,8 +2,8 @@
 
 .article__updates {
   background-color: $secondary-color;
-  padding-top: calc(100% * 65 / 375);
-  padding-bottom: calc(100% * 54 / 375);
+  padding-top: 65px;
+  padding-bottom: 54px;
   padding-inline: $margin-inline;
 }
 
@@ -17,6 +17,9 @@
   font-family: "DM Serif Display";
   line-height: 48px;
   font-size: 40px;
+  max-width: 382px;
+  margin-block-end: 50px;
+  margin-block-start: 20px;
 }
 
 .latest {
@@ -30,6 +33,9 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .article__updates__form-feildeset {
@@ -38,7 +44,7 @@
 }
 
 [name="email"],
-.btn.btn-sumbit {
+.btn.btn-submit {
   display: block;
   height: 48px;
   font-family: "DM sans";
@@ -51,9 +57,16 @@
   width: 100%;
 }
 
-.btn.btn-sumbit {
+.btn.btn-submit {
   background-color: $brand-color;
-  width: calc(100% * 170 / 375);
+  width: calc(100% * 170 / 375);;
   cursor: pointer;
+  color: $primary-color;
   margin-top: calc(100% * 17 / 375);
+  transition: 0.1s;
+}
+
+.btn.btn-submit:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+  transform: scale(1.1);
 }
