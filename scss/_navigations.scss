@@ -28,7 +28,7 @@ body [type="checkbox"][name="menu"] {
 }
 
 label > span {
-  opacity: 0;
+  display: none;
 }
 
 [type="checkbox"][name="menu"] {
