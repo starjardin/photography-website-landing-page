@@ -59,7 +59,7 @@
 
 .btn.btn-submit {
   background-color: $brand-color;
-  width: calc(100% * 170 / 375);;
+  width: 170px;
   cursor: pointer;
   color: $primary-color;
   margin-top: calc(100% * 17 / 375);
@@ -69,4 +69,36 @@
 .btn.btn-submit:hover {
   background-color: rgba(0, 0, 255, 0.5);
   transform: scale(1.1);
+}
+
+@media (min-width: $breakpoint) {
+  .article__updates--container {
+   @include flex-row;
+   align-items: center;
+  }
+
+  [for="email"],
+  [name="email" ],
+  .btn.btn-submit {
+    margin: 0;
+  }
+
+ .article__updates__form-feildeset  {
+    @include flex-row;
+   flex-wrap: wrap;
+   width: 570px;
+ }
+
+ [for="email"] {
+   display: block;
+   flex-basis: 100%;
+ }
+
+ [name="email" ] {
+   width: calc(100% * 342 / 570);
+ }
+
+ .btn.btn-submit {
+   width: calc(100% * 170 / 570);
+ }
 }
