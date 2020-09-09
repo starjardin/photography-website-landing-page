@@ -1,5 +1,9 @@
 @import "variables";
 
+.article__image-slider {
+  padding-inline: $margin-inline;
+}
+
 .article__image-slider__heading {
   display: none;
 }
@@ -9,7 +13,6 @@
 }
 
 .images {
-  padding-inline: $margin-inline;
   position: relative;
   padding-bottom: calc(100% * 85 / 375);
   overflow: hidden;
