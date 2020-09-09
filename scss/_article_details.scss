@@ -2,7 +2,7 @@
 
 .article__details {
   padding-inline: $margin-inline;
-  padding-top: calc(100% * 95 / 375);
+  padding-top: 95px;
 }
 
 .article__details__heading {
@@ -29,7 +29,7 @@
   margin: 0;
   font-weight: bold;
   color: $black-color;
-  padding-bottom: calc(100% * 44 / 375);
+  padding-bottom: 44px;
 }
 
 .article__details__definition__list span {
