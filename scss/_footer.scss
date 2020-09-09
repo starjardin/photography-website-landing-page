@@ -2,7 +2,7 @@
 
 .main__footer,
 .footer__navigation--container {
-    padding-top: 77px;
+  padding-top: 77px;
 }
 .main__footer {
   background-color: $primary-color;
@@ -22,6 +22,17 @@
   text-transform: uppercase;
 }
 
+.footer__componants,
+.footer__navigation--anchor,
+.main__footer_personal-website {
+  color: $half-black;
+}
+
+.main__footer_personal-website {
+  line-height: 24px;
+  font-size: 16px;
+}
+
 .footer__navigation {
   @include reset-nav;
 }
@@ -32,7 +43,28 @@
 
 .footer__experience--list { 
   @include flex-row;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.footer__experience--lists > li {
+  margin-block-end: 27px;
+}
+
+.footer__experience--lists > li p {
+  font-size: 16px;
+  line-height: 24px;
+  color: $half-black;
+}
+
+.footer__experience--lists > li time {
+  font-size: 12px;
+  line-height: 24px;
+  color: $black-color;
+}
+
+picture ~ div {
+  margin-inline-start: 32px;
 }
 
 .footer--picture {
@@ -47,14 +79,12 @@
 .footer__componants {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-block: 29px;
-  color: $half-black;
   line-height: 24px;
   font-size: 16px;
 }
 
 .footer__navigation--anchor {
   display: block;
-  color: $half-black;
   padding: 9px;
 }
 
@@ -64,4 +94,8 @@
 
 .footer__navigation--anchor:visited {
   color: $brand-color;
+}
+
+.footer__experience {
+  padding-block: 77px;
 }
