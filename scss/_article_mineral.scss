@@ -44,17 +44,16 @@
   display: block;
   width: 20px;
   @include center-background;
+  background-size: contain;
   transition: .3s;
 }
 
 .mineral__media--anchor.facebook {
   background-image: img("icon_facebook.svg");
-  background-size: contain;
 }
 
 .mineral__media--anchor.twitter {
   background-image:img("icon_twitter.svg");
-  background-size: contain;
 }
 
 .mineral__media--anchor.instagram {
