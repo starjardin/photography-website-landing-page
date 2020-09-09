@@ -11,17 +11,20 @@ html {
   margin: auto;
 }
 
-@media (min-width: 720px) {
+@media (min-width: $breakpoint) {
   body main {
-    display: flex;
-    flex-direction: column;
+    @include flex-row;
+    flex-wrap: wrap;
   }
 
-  body .masthead {
+  body .masthead,
+  .article__image-slider,
+  .article__updates {
     flex-basis: 100%;
   }
 
-  main .article__image-slider {
+  main .article__details,
+  main .article__mineral {
     flex-basis: 50%;
   }
 }
