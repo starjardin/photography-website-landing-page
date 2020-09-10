@@ -4,10 +4,6 @@
   background-color: $brand-color;
 }
 
-.masthead {
-  padding-inline-start: $margin-inline;
-}
-
 .header__container {
   @include flex-row;
   align-items: center;
@@ -23,11 +19,14 @@
 }
 
 //masthead
-
 .masthead__heading,
 .masthead__description {
   font-style: normal;
   color: $black-color;
+}
+
+.masthead {
+  padding-inline: $margin-inline;
 }
 
 .masthead__heading {
