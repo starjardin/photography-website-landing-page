@@ -1,0 +1,20 @@
+@import "variables";
+
+@media (min-width: $breakpoint) {
+  .section__flex {
+    @include flex-row;
+    max-width: $max-width-container;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-inline: calc(100% * 15 / 375);
+  }
+
+  .section__flex article {
+    flex-basis: 50%;
+    padding-inline: 0;
+  }
+
+  main .article__mineral {
+    margin-top: 87px;
+  }
+}
