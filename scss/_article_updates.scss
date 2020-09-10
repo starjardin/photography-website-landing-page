@@ -85,6 +85,10 @@
     margin: 0;
   }
 
+  [for="email"] {
+    margin: 6px;
+  }
+
  .article__updates__form-feildeset  {
     @include flex-row;
     flex-wrap: wrap;
@@ -98,7 +102,6 @@
  }
 
  [name="email" ] {
-   margin-top: 6px;
    width: calc(100% * 342 / 570);
  }
 
