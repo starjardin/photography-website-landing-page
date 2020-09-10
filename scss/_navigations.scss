@@ -5,7 +5,7 @@
 }
 
 .list--anchor {
-  display: block;
+  display: inline-block;
   padding: 1rem;
   text-transform: capitalize;
   color: $primary-color;
@@ -47,11 +47,11 @@ label > span {
   padding: 1rem;
   background-color: $brand-color;
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 250px;
+  width: 180px;
   height: 100vh;
   box-shadow: 0 0 50px rgba(0,0,0,.5);
   transform: translateY(-210%);
@@ -64,26 +64,26 @@ body [type="checkbox"]:checked ~ .header__navigation {
 
 body [type="checkbox"]:checked ~ .header__navigation label {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 210px;
   height: 100vh;
-  width: 100vw;
+  width: calc(100vw - (210px + 20px));
   background: rgba(0,0,0,.25);
 }
 
 //here is going back to portfolio
 .back-to-portfolio {
-  display: block;
+  display: inline-block;
   @include font-wei-norm-siz-16;
   @include center-background;
   background-image: img("icon_arrow_left.svg");
   background-size: 14px;
   background-position: left;
-  margin-top: 30px;
-  padding-left: 25px;
+  margin-top: 17px;
+  padding: 30px;
   text-decoration: $text-decoration-none;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -97,7 +97,6 @@ body [type="checkbox"]:checked ~ .header__navigation label {
     padding: 0;
     background: none;
     position: initial;
-    z-index: 3;
     box-shadow: none;
     transform: none;
     transition: none;
