@@ -43,6 +43,10 @@
   margin-inline-start: 9px;
 }
 
+.pictures-container picture:hover {
+  opacity: 1;
+}
+
 //media 
 @media (min-width: $breakpoint) {
   .images {
