@@ -99,7 +99,7 @@ picture ~ div {
   color: $brand-color;
 }
 
-.footer__navigation--anchor.anchor.home {
+.footer__navigation--anchor.home {
   padding-block: 17px;
   color: $black-color;
   font-weight: 700;
@@ -111,6 +111,7 @@ picture ~ div {
   font-weight: bold;
   transform: scale(1.1);
   background-color: #cccccc;
+  padding: 9px;
 }
 
 .footer__experience {
