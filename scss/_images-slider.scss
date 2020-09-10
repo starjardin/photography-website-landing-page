@@ -2,6 +2,7 @@
 
 .article__image-slider {
   padding-inline: $margin-inline;
+  overflow: hidden;
 }
 
 .article__image-slider__heading {
@@ -14,8 +15,8 @@
 
 .images {
   position: relative;
-  padding-bottom: calc(100% * 85 / 375);
-  overflow: hidden;
+  padding-bottom: calc(100% * 105 / 375);
+  overflow: visible;
  }
 
 .images picture > img {
@@ -26,8 +27,10 @@
 .pictures-container {
   display: flex;
   position: absolute;
-  width: 100vw;
   padding-top: 10px;
+  right: -235%;
+  left: 0;
+  bottom: 0;
 }
 
 .pictures-container picture {
@@ -37,22 +40,11 @@
 
 .pictures-container picture:not(:nth-of-type(1)) {
   opacity: .5;
-}
-
-.stairs {
-  margin-inline: 9px;
-}
-
-.pictures-container > picture:nth-of-type(3) ~ * {
-  display: none;
+  margin-inline-start: 9px;
 }
 
 //media 
 @media (min-width: $breakpoint) {
-  .pictures-container > picture:nth-of-type(3) ~ *  {
-    display: block;
-  }
-
   .images {
     padding-bottom: 0;
   }
@@ -62,14 +54,6 @@
     position: initial;
     width: 100%;
     padding-top: 10px;
-  }
-
-  .pictures-container {
-    display: flex;
-  }
-
-  .stairs {
-    margin-inline: 0;
   }
 
   .pictures-container picture:not(:nth-last-of-type(1)) {
