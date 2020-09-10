@@ -84,16 +84,33 @@ picture ~ div {
 }
 
 .footer__navigation--anchor {
-  display: block;
+  display: inline-block;
   padding: 9px;
+  transition: 0.2s;
 }
 
 .footer__navigation--anchor:active {
   color: $black-color;
+  padding-block: 13px;
+  font-weight: bold;
 }
 
 .footer__navigation--anchor:visited {
   color: $brand-color;
+}
+
+.footer__navigation--anchor.anchor.home {
+  padding-block: 17px;
+  color: $black-color;
+  font-weight: 700;
+  padding-top: 0;
+}
+
+.footer__navigation--anchor:hover {
+  color: $black-color;
+  font-weight: bold;
+  transform: scale(1.1);
+  background-color: #cccccc;
 }
 
 .footer__experience {
