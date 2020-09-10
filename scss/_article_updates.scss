@@ -18,6 +18,7 @@
   line-height: 48px;
   font-size: 40px;
   max-width: 382px;
+  min-width: 300px;
   margin-block-end: 50px;
   margin-block-start: 20px;
 }
@@ -59,7 +60,8 @@
 
 .btn.btn-submit {
   background-color: $brand-color;
-  width: 170px;
+  width: calc(100% * 170 / 357);
+  max-width: 170px;
   cursor: pointer;
   color: $primary-color;
   margin-top: calc(100% * 17 / 375);
@@ -85,8 +87,9 @@
 
  .article__updates__form-feildeset  {
     @include flex-row;
-   flex-wrap: wrap;
-   width: 570px;
+    flex-wrap: wrap;
+    width: 50vw;
+    max-width: 570px;
  }
 
  [for="email"] {
