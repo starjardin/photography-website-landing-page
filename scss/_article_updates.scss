@@ -92,7 +92,8 @@
  .article__updates__form-feildeset  {
     @include flex-row;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 45vw;
+    margin-inline-start: 5vw;
     max-width: 570px;
  }
 
