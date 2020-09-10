@@ -6,10 +6,7 @@
 }
 
 @mixin reset-nav {
-  ul {
-    padding: 0;
-  }
-
+  @include reset-ul;
   ul > li {
     list-style: $list-style-none;
   }
@@ -32,7 +29,7 @@
 }
 
 @mixin reset-link-list {
-  padding: 0;
+  @include reset-ul;
   
   & > li {
     list-style: $list-style-none;
@@ -43,7 +40,7 @@
   }
 }
 
-//fonts
+//fonts mixins
 @mixin font-wei-norm-siz-18 {
   font-weight: $normal-font-weight;
   font-size: $font-size-18;
