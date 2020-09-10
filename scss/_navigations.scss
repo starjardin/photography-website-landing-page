@@ -83,7 +83,6 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   background-size: 14px;
   background-position: left;
   margin-top: 30px;
-  margin-inline-start: $margin-inline;
   padding-left: 25px;
   text-decoration: $text-decoration-none;
   color: rgba(0, 0, 0, 0.5);
