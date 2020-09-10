@@ -6,19 +6,7 @@ html {
   font-weight: 400;
 }
 
-article,
 .container {
-  max-width: 1164px;
+  max-width: $max-width-container;
   margin: auto;
-}
-
-@media (min-width: $breakpoint) {
-  .section__flex {
-    @include flex-row;
-    max-width: 1164px;
-    margin: auto;
-  }
-  main .article__mineral {
-    margin-top: 87px;
-  }
 }
