@@ -1,7 +1,7 @@
 $fonts : (
-  (family: "DM sans", weight: 400, style: normal, filename: "dm_sans"),
-  (family: "DM sans", weight: 700, style: normal, filename: "dm_sans"),
-  (family: "DM sans", weight: 500, style: normal, filename: "dm_sans"),
+  (family: "dmsans", fontname: "DM sans", weight: 400, style: normal, filename: "dm_sans"),
+  (family: "dmsans", fontname: "DM sans", weight: 700, style: normal, filename: "dm_sans"),
+  (family: "dmsans", fontname: "DM sans", weight: 500, style: normal, filename: "dm_sans"),
 );
 
 @each $font in ($fonts) {
@@ -9,22 +9,22 @@ $fonts : (
       font-family: map-get($font, family);
       font-weight: map-get($font, weight);
       font-style: map-get($font, style);
-      src: local("#{map-get($font, family)}-Regular"),
-           local("#{map-get($font, family)} Regular"),
-           local("#{map-get($font, family)}-Bold"),
-           local("#{map-get($font, family)} Bold"),
-           url('../fonts/#{map-get($font, filename)}_400}.woff') format("woff"),
+      src: local("#{map-get($font, fontname)}-Regular"),
+           local("#{map-get($font, fontname)} Regular"),
+           local("#{map-get($font, fontname)}-Bold"),
+           local("#{map-get($font, fontname)} Bold"),
+           url('../fonts/#{map-get($font, filename)}_400.woff') format("woff"),
            url('../fonts/#{map-get($font, filename)}_500.woff') format("woff"),
            url('../fonts/#{map-get($font, filename)}_700.woff') format("woff"),
            url('../fonts/#{map-get($font, filename)}_400}.woff2') format("woff2"),
            url('../fonts/#{map-get($font, filename)}_500.woff2') format("woff2"),
-          url('../fonts/#{map-get($font, filename)}_700.woff2') format("woff2"),
+           url('../fonts/#{map-get($font, filename)}_700.woff2') format("woff2"),
   };
 };
 
 $serif_fonts : (
-  (family: "DM serif Display", weight: 400, style: normal, filename: "dm_serif_display"),
-  (family: "DM serif Display", weight: 400, style: italic, filename: "dm_serif_display"),
+  (family: "serif", fontname: "DM serif Display", weight: 400, style: normal, filename: "dm_serif_display"),
+  (family: "serif", fontname: "DM serif Display", weight: 400, style: italic, filename: "dm_serif_display"),
 );
 
 @each $font in ($serif_fonts) {
@@ -32,10 +32,10 @@ $serif_fonts : (
       font-family: map-get($font, family);
       font-weight: map-get($font, weight);
       font-style: map-get($font, style);
-      src: local("#{map-get($font, family)}-Regular"),
-           local("#{map-get($font, family)} Regular"),
-           local("#{map-get($font, family)}-Bold"),
-           local("#{map-get($font, family)} Bold"),
+      src: local("#{map-get($font, fontname)}-Regular"),
+           local("#{map-get($font, fontname)} Regular"),
+           local("#{map-get($font, fontname)}-Bold"),
+           local("#{map-get($font, fontname)} Bold"),
            url('../fonts/#{map-get($font, filename)}_400.woff') format("woff"),
            url('../fonts/#{map-get($font, filename)}_400.woff2') format("woff2"),
   };
