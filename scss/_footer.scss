@@ -99,3 +99,29 @@ picture ~ div {
 .footer__experience {
   padding-block: 77px;
 }
+
+@media (min-width: $breakpoint) {
+  .footer--container.container {
+    @include flex-row;
+    flex-wrap: wrap;
+  }
+
+  .main__footer__aboutthewriter {
+    flex-basis: 35%;
+  }
+
+  .footer__navigation--container {
+    flex-basis: 25%;
+    padding-top: 0;
+  }
+
+  .footer__experience {
+    flex-basis: 40%;
+    padding-top: 0;
+  }
+
+  .footer__componants {
+    @include flex-row;
+    flex-basis: 100%;
+  }
+}
