@@ -6,25 +6,19 @@ html {
   font-weight: 400;
 }
 
+article,
 .container {
   max-width: 1164px;
   margin: auto;
 }
 
 @media (min-width: $breakpoint) {
-  body main {
+  .section__flex {
     @include flex-row;
-    flex-wrap: wrap;
+    max-width: 1164px;
+    margin: auto;
   }
-
-  body .masthead,
-  .article__image-slider,
-  .article__updates {
-    flex-basis: 100%;
-  }
-
-  main .article__details,
   main .article__mineral {
-    flex-basis: 50%;
+    margin-top: 87px;
   }
 }
