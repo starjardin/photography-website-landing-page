@@ -44,7 +44,7 @@
 .footer__experience--list { 
   @include flex-row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer__experience--lists > li {
@@ -70,6 +70,7 @@ picture ~ div {
 .footer--picture {
   width: calc(100% * 70 / 375);
   height: calc(100% * 47 / 375);
+  min-width: 70px;
 }
 
 .footer--picture > img {
