@@ -15,7 +15,7 @@
 
 .list--anchor:hover {
   background-color: $secondary-color;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.3s;
   box-shadow: 1px 1px 1px black;
 }
@@ -30,6 +30,7 @@ body [type="checkbox"][name="menu"] {
   display: block;
   width: 20px;
   height: 20px;
+  line-height: 48px;
   margin-right: $margin-inline;
   background-image: img("icon_menu.svg");
   background-repeat: no-repeat;
@@ -45,7 +46,6 @@ label > span {
 }
 
 .header__navigation {
-  padding: 1rem;
   background-color: $brand-color;
   position: absolute;
   z-index: 1;
@@ -115,7 +115,7 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   }
 
   .list--anchor  {
-    line-height: 24px;
+    line-height: 48px;
     font-size: 16px;
   }
 }
