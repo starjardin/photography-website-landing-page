@@ -1,30 +1,30 @@
 @import "variables";
 
+//hide overflow and add gap in both sides
 .article__image-slider {
   padding-left: $margin-inline;
   padding-right: $margin-inline;
   overflow: hidden;
 }
 
+//hide the heading
 .article__image-slider__heading {
   display: none;
 }
 
-.images--container > picture {
-  margin: 0;
-}
-
+//set the image container to be position relative an show overflow
 .images {
   position: relative;
   padding-bottom: calc(100% * 105 / 375);
   overflow: visible;
  }
 
+//creat small round in each corner of the images
 .images picture > img {
   border-radius: 5px;
-  margin: 0;
 }
 
+//position absolute the images
 .pictures-container {
   display: flex;
   position: absolute;
@@ -34,26 +34,31 @@
   bottom: 0;
 }
 
+//give the image container width to put the image in.
 .pictures-container picture {
   width: calc(100% * 137 / 375);
   height: calc(100% * 85 / 375);
 }
 
+//blur the images and gaps in front
 .pictures-container picture:not(:nth-of-type(1)) {
   opacity: .5;
   margin-left: 9px;
 }
 
+//clear the image when it gets hovered
 .pictures-container picture:hover {
   opacity: 1;
 }
 
-//media 
+//media min-width of 720px
 @media (min-width: $breakpoint) {
+  //keep the images stay at the botton of the container
   .images {
     padding-bottom: 0;
   }
 
+  //destroy the position absolute
   .pictures-container {
     display: flex;
     position: initial;
@@ -61,6 +66,7 @@
     padding-top: 10px;
   }
 
+//add a little gat after each image apart from the last image
   .pictures-container picture:not(:nth-last-of-type(1)) {
     margin-inline-end: 9px;
   }
