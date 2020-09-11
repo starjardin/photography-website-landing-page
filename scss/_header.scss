@@ -7,7 +7,8 @@
 .header__container {
   @include flex-row;
   align-items: center;
-  padding-inline: $margin-inline;
+  padding-left: $margin-inline;
+  padding-right: $margin-inline;
   margin: auto;
 }
 
@@ -28,7 +29,8 @@
 }
 
 .masthead {
-  padding-inline: $margin-inline;
+  padding-left: $margin-inline;
+  padding-right: $margin-inline;
 }
 
 .masthead__heading {
@@ -37,15 +39,15 @@
   font-weight: normal;
   font-size: 52px;
   line-height: 64px;
-  margin-block-start: 66px;
-  margin-block-end: 79px;
+  margin-top: 66px;
+  margin-bottom: 79px;
 }
 
 .masthead__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  margin-block-end: 80px;
+  margin-bottom: 80px;
 }
 
 .perspective {
