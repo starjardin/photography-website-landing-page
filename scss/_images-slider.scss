@@ -1,7 +1,8 @@
 @import "variables";
 
 .article__image-slider {
-  padding-inline: $margin-inline;
+  padding-left: $margin-inline;
+  padding-right: $margin-inline;
   overflow: hidden;
 }
 
@@ -40,7 +41,7 @@
 
 .pictures-container picture:not(:nth-of-type(1)) {
   opacity: .5;
-  margin-inline-start: 9px;
+  margin-left: 9px;
 }
 
 .pictures-container picture:hover {
