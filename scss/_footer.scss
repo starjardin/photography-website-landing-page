@@ -97,7 +97,6 @@ picture ~ div {
 
 //addign gaps at the top, right,left and bottom if this componants
 .footer__componants {
-  // border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   padding-top: 29px;
   padding-bottom: 29px;
@@ -106,11 +105,12 @@ picture ~ div {
   position: relative;
 }
 
+//add a line trough in the footer
 .footer__componants::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -2.5rem;
+  left: -1.5rem;
   margin: 0;
   right: 0;
   display: block;
