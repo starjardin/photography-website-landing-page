@@ -104,3 +104,19 @@ So, what is expected then? We're going to be marking most of the things we've le
 ## Ready?
 
 Apply everything you've learend before, do your best, and Good luck! 🤓
+
+**********************************************
+## Little notes
+
+You might have seen that there are some invalid html if chekced it in the html valdator. It says this following is not valid : 
+```<dl>
+      <div>
+        <dd>
+        </dd>
+        <dt>
+        </dt>
+      </div>
+    </dl>
+```
+
+However, I looked it up on google and they said it is valid. [this-said-link-it-is-a-valid-html!](https://www.stefanjudis.com/today-i-learned/divs-are-valid-elements-inside-of-a-definition-list/);
