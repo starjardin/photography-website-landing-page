@@ -7,12 +7,13 @@
 .main__footer {
   background-color: $primary-color;
   color: $black-color;
-  padding-inline: $margin-inline;
+  padding-left: $margin-inline;
+  padding-right: $margin-inline;
 }
 
 .main__footer__heading,
 .main__footer_personal-website {
-  margin-block-end: 30px;
+  margin-bottom: 30px;
 }
 
 .main__footer__heading {
@@ -48,7 +49,7 @@
 }
 
 .footer__experience--lists > li {
-  margin-block-end: 27px;
+  margin-bottom: 27px;
 }
 
 .footer__experience--lists > li p {
@@ -64,7 +65,7 @@
 }
 
 picture ~ div {
-  margin-inline-start: 32px;
+  margin-left: 32px;
 }
 
 .footer--picture {
@@ -79,7 +80,8 @@ picture ~ div {
 
 .footer__componants {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-block: 29px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   line-height: 24px;
   font-size: 16px;
 }
@@ -92,7 +94,8 @@ picture ~ div {
 
 .footer__navigation--anchor:active {
   color: $black-color;
-  padding-block: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-weight: bold;
 }
 
@@ -101,7 +104,7 @@ picture ~ div {
 }
 
 .footer__navigation--anchor.home {
-  padding-block: 17px;
+  padding-bottom: 17px;
   color: $black-color;
   font-weight: 700;
   padding-top: 0;
@@ -112,11 +115,15 @@ picture ~ div {
   font-weight: bold;
   transform: scale(1.1);
   background-color: #cccccc;
-  padding: 9px;
+  padding-top: 9px;
+  padding-right: 9px;
+  padding-bottom: 9px;
+  padding-left: 9px;
 }
 
 .footer__experience {
-  padding-block: 77px;
+  padding-top: 77px;
+  padding-bottom: 77px;
 }
 
 @media (min-width: $breakpoint) {

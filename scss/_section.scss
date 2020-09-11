@@ -6,12 +6,14 @@
     max-width: $max-width-container;
     margin: auto;
     flex-wrap: wrap;
-    padding-inline: calc(100% * 15 / 375);
+    padding-left: calc(100% * 15 / 375);
+    padding-right: calc(100% * 15 / 375);
   }
 
   .section__flex article {
     flex-basis: 48%;
-    padding-inline: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   main .article__mineral {

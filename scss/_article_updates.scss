@@ -4,7 +4,8 @@
   background-color: $secondary-color;
   padding-top: 65px;
   padding-bottom: 54px;
-  padding-inline: $margin-inline;
+  padding-left: $margin-inline;
+  padding-right: $margin-inline;
 }
 
 .article__updates__header {
@@ -19,8 +20,8 @@
   font-size: 40px;
   // max-width: 382px;
   min-width: 300px;
-  margin-block-end: 50px;
-  margin-block-start: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .latest {
@@ -93,7 +94,7 @@
     @include flex-row;
     flex-wrap: wrap;
     width: 45vw;
-    margin-inline-start: 5vw;
+    margin-left: 5vw;
     max-width: 570px;
     margin-top: 3rem;
  }

@@ -92,6 +92,7 @@ body [type="checkbox"]:checked ~ .header__navigation label {
 @media (min-width: $breakpoint) {
   .header__navigation-lists.nav {
     @include flex-row;
+    flex-wrap: wrap;
   }
 
   .header__navigation {
