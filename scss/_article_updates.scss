@@ -72,6 +72,7 @@
 .btn.btn-submit:hover {
   background-color: rgba(0, 0, 255, 0.5);
   transform: scale(1.1);
+  box-shadow: 2px 2px 2px black;
 }
 
 @media (min-width: $breakpoint) {
