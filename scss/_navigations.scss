@@ -26,12 +26,13 @@
 [for="menu"] {
   order: 3;
   display: block;
-  width: 20px;
+  width: 120px;
   height: 20px;
   line-height: 48px;
   margin-right: $margin-inline;
   background-image: img("icon_menu.svg");
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 //hide the span in the label
