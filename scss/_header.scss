@@ -59,6 +59,10 @@
     max-width: 457px;
   }
 
+  .header__container {
+    align-items: flex-start;
+  }
+
   .header__heading {
     line-height: 48px;
     font-size: 40px; 
