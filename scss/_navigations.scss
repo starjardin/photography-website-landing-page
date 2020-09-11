@@ -17,6 +17,7 @@
   background-color: $secondary-color;
   transform: scale(1.2);
   transition: transform 0.3s;
+  box-shadow: 1px 1px 1px black;
 }
 
 body [type="checkbox"][name="menu"] {
