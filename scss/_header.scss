@@ -7,13 +7,14 @@
 .header__container {
   @include flex-row;
   align-items: center;
+  padding-inline: $margin-inline;
+  margin: auto;
 }
 
 .header__heading {
   font-family: "DM serif Display";
   text-transform: uppercase;
   color: $primary-color;
-  margin-inline-start: $margin-inline;
   margin-block: 16px;
   line-height: 32px;
   font-size: 24px;
