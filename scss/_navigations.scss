@@ -4,6 +4,7 @@
   @include reset-nav;
 }
 
+//rule for the anchors
 .list--anchor {
   display: inline-block;
   padding: 1rem;
@@ -13,6 +14,7 @@
   transition: transform 0.3s;
 }
 
+//state list anchor hovered
 .list--anchor:hover {
   background-color: $secondary-color;
   transform: scale(1.1);
@@ -20,11 +22,7 @@
   box-shadow: 1px 1px 1px black;
 }
 
-body [type="checkbox"][name="menu"] {
-  border: none;
-  background-color: $brand-color;
-}
-
+//rule for the menu
 [for="menu"] {
   order: 3;
   display: block;
@@ -36,15 +34,18 @@ body [type="checkbox"][name="menu"] {
   background-repeat: no-repeat;
 }
 
+//hide the span in the label
 label > span {
   display: none;
 }
 
+//hide the checkbox and change its order
 [type="checkbox"][name="menu"] {
   order: 2;
   opacity: 0;
 }
 
+//rule for the navigation. close state
 .header__navigation {
   background-color: $brand-color;
   position: absolute;
@@ -59,19 +60,21 @@ label > span {
   transition: transform 0.5s;
 }
 
+//checkbox is checked show the navv list
 body [type="checkbox"]:checked ~ .header__navigation {
   transform: translateY(0);
 }
 
+//if checkbox is checked, label is filling the viewport
 body [type="checkbox"]:checked ~ .header__navigation label {
   position: absolute;
   z-index: 3;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 210px;
+  left: 180px;
   height: 100vh;
-  width: calc(100vw - (210px + 20px));
+  width: calc(100vw - (180px + 20px));
   background: rgba(0,0,0,.25);
 }
 
@@ -89,12 +92,15 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   color: rgba(0, 0, 0, 0.5);
 }
 
+//@media (720px)
 @media (min-width: $breakpoint) {
+  //align the nav list on top of the header
   .header__navigation-lists.nav {
     @include flex-row;
     flex-wrap: wrap;
   }
 
+//rule for the navigation block on desktop
   .header__navigation {
     padding: 0;
     background: none;
@@ -106,14 +112,17 @@ body [type="checkbox"]:checked ~ .header__navigation label {
     width: auto;
   }
 
+//kill the checkbox on desktop
   [type="checkbox"] {
     display: none;
   }
 
+//destroy the label on desktop
   [for="menu"] {
     display: none;
   }
 
+//rule for the navigation list on desktop
   .list--anchor  {
     line-height: 48px;
     font-size: 16px;
