@@ -1,5 +1,6 @@
 @import "variables";
 
+//add gaps to the left, top, right and bottom
 .article__mineral {
   padding-left: $margin-inline;
   padding-right: $margin-inline;
@@ -7,6 +8,7 @@
   margin-top: 61px;
 }
 
+//text heading
 .article__mineral__heading {
   font-family: "DM serif Display";
   font-weight: normal;
@@ -15,6 +17,7 @@
   margin-bottom: 47px;
 }
 
+//text paragraph rule
 .article__mineral__main--paragraph.place {
   color: $black-color;
   padding-bottom: 43px;
@@ -22,6 +25,7 @@
   font-size: 18px;
 }
 
+//text paragraph rule, semi-transparent
 .article__mineral__main--paragraph.experience {
   color: $half_black;
   padding-bottom: 70px;
@@ -33,17 +37,20 @@
   font-style: italic;
 }
 
+//align the media icons horizontaly
 .mineral__media--lists {
   @include flex-row;
   @include reset-link-list;
   max-width: calc(100% * 105 / 375);
 }
 
+//hide the text and change them into background
 .mineral__media--anchor span {
   transform: translateX(-99999%);
   opacity: 0;
 }
 
+//set size to each list item
 .mineral__media--anchor {
   display: block;
   width: 20px;
@@ -52,30 +59,37 @@
   transition: transform .3s;
 }
 
+//add background image to each item
 .mineral__media--anchor.facebook {
   background-image: img("icon_facebook.svg");
 }
 
+//add background image to each item
 .mineral__media--anchor.twitter {
   background-image:img("icon_twitter.svg");
 }
 
+//add background image to each item
 .mineral__media--anchor.instagram {
   background-image: img("icon_instagram.svg");
 }
 
+//scale the items on hovered state
 .mineral__media--anchor:hover {
   transform: scale(1.5);
 }
 
+//change the background image on hovered state
 .mineral__media--anchor.facebook:hover {
   background-image: img("icon_facebook_hover.svg");
 }
 
+//change the background image on hovered state
 .mineral__media--anchor.twitter:hover {
   background-image:img("icon_twitter_hover.svg");
 }
 
+//change the background image on hovered state
 .mineral__media--anchor.instagram:hover {
   background-image: img("icon_instagram_hover.svg");
 }
