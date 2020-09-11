@@ -17,7 +17,7 @@
   font-family: "DM Serif Display";
   line-height: 48px;
   font-size: 40px;
-  max-width: 382px;
+  // max-width: 382px;
   min-width: 300px;
   margin-block-end: 50px;
   margin-block-start: 20px;
@@ -76,7 +76,7 @@
 @media (min-width: $breakpoint) {
   .article__updates--container {
    @include flex-row;
-   align-items: center;
+   align-items: flex-start;
   }
 
   [for="email"],
@@ -95,6 +95,7 @@
     width: 45vw;
     margin-inline-start: 5vw;
     max-width: 570px;
+    margin-top: 3rem;
  }
 
  [for="email"] {
