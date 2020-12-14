@@ -1,12 +1,43 @@
 # Front-end final mockup-to-website project
 
-Hey everyone! 
+<h1 align="center">Photograph</h1>
 
-This will be our final project in the front-end course, so let's make it a good one :)
+<div align="center">
+  <h3>
+    <a href="https://starjardin.github.io/front-end-finals/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/starjardin/front-end-finals">
+      Solution
+    </a>
+  </h3>
+</div>
 
-Please fork-and-clone this project as your own repo.
+# Table of Contents
 
-First things first, let's get you set up. You will need the following…
+-   [Overview](#overview)
+-   [Features](#features)
+-   [Dependencies](#dependencies)
+-   [Install](#install)
+-   [Getting started](#getting-started)
+-   [Design](#design)
+-   [How to use](#how-to-use)
+-   [Development](#development)
+-   [Contact](#contact)
+
+## Overview
+
+-  You can see the demo and the Code in these following links 
+  <a href="https://starjardin.github.io/front-end-finals/">
+    Demo
+  </a> and
+  <a href="https://github.com/starjardin/front-end-finals">
+    Solution
+  </a>
+
+-  I learned a lot about using node sass, it was hard to get it ready to work at the first time because I never used it in my past projects. What I really liked about this project was using scss, so fun, I only new how to style a page using css before this project but now scss is a great tool to have in the pocket, it saves you tones of times. What is nice about scss is that you can impliment those cool things that could not do in css. With scss you can use css variable, mixing, function, and son fourth.
+-  I started to use I little bit of javascript in this project of which I am proud.
 
 ## Dependencies
 
@@ -29,94 +60,32 @@ You can find the design:
 - online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
 - by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
 
-### Source files
-
-Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
-
-2. Install any OTF/TTF fonts found in the `source_materials/fonts` folder in your system, so that you don't get bugged by Figma's Font replacement dialog box.
-
-### Webroot
-
-As with most setups, it's a good idea to isolate all the web-files in the `webroot` folder.
-Export all the images, fonts, HTML, JS, and CSS you use to this webroot folder (in the right subfolder of course!).
-
-3. Create a `webroot/index.html` file.
-
 ### Sass
 
+## How To Use
 We'll be using the `scss` folder for all our Sass files.
+<!-- Example: -->
 
-4. Create a `scss/index.scss` file, that will act as our manifest Sass file.
-5. Build your CSS file once by running the `npm run scss` script.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-All your Sass files will be output to the `webroot/css` folder.
+```bash
+# Clone this repository
+$ git clone https://github.com/your-user-name/your-project-name
 
-### Linking up our styles
+# Install dependencies
+$ npm install
 
-6. Link up the new `webroot/css/index.css` stylesheet in your `index.html`
+# Run the app
+$ npm start
+```
+
+- To run the code in your local machine, run `npm run scss`.
 
 ## Development
 
 You'll want to run the `scss:watch` task when you're developing this project.
 
-## Marking & requirements
+## Contact
 
-You have 5 days to convert the design work to a working single webpage. There's a lot to cover here in a week, and we don't expect you to have the entire website done in that time, but it would be great if you could.
+-   GitHub [@your-username](https://github.com/starjardin)
 
-So, what is expected then? We're going to be marking most of the things we've learned this year. Here's a list of things we'll be looking at:
-
-- **All the HTML**
-  - Your HTML should be clean, accurate, and consistent.
-  - Use the right elements for the right job.
-  - Structure your HTML nicely.
-  - Make sure your HTML is accessible.
-  - Make sure your HTML is valid.
-  - *Bonus points*: Progressively enhancing your HTML, e.g. using `<picture>` elements with multiple sources.
-- **As much Sass as you can**
-  - Your Sass should use variables at a minimum, and be extended with mixins, functions, and abstract classes if you can.
-  - Your Sass output should be orderly, and expected.
-  - Keep your SCSS files clean
-  - Add helpful comments to the difficult-to-understand parts.
-  - You don't have to style everything within the time-frame. But we want to see completed components where possible.
-- **CSS**
-  - Add style to elements that the user can focus, hover over, or interact with.
-  - Your work should be Mobile-First by default, and Responsive.
-  - *Bonus points*: Use Custom Properties if you can.
-- **Images**
-  - Are you using a CSS `background-image` or an `<img>` in the HTML? Make sure it's for the right reasons.
-  - Use the correct image format for each case
-  - *Bonus points*: Compress your images
-- **Fonts**
-  - If you'd like, use a `fonts.google.com`-supplied stylesheet for the fonts, but we really want to see you use your own `@font-face` declarations. Link up the WOFF2 and WOFF formats to your CSS using as many `@font-face` at-rules as you need.
-  - Use `local()` functions for locally-installed fonts.
-  - Test that your website works without local font support.
-  - *Bonus points*: Subset your fonts
-- **General**
-  - No spelling or grammar mistakes please
-  - Test, test, test!
-  - Don't feel pressure to complete the entire page, but rather try complete each component you start. **Leave out the bits that look too complex and work on them at the end!**
-  - Ensure your commits are frequent and well-described.
-- **Advanced**
-  - Make the menu on mobile work nicely, use your own imagination here.
-  - *Bonus points*: Make the Image Slider, and other components work as intended, maybe you'll need some JS?
-  - *Bonus points*: Use newer image formats such as WebP and AVIF, while still maintaining support for older formats.
-
-## Ready?
-
-Apply everything you've learend before, do your best, and Good luck! 🤓
-
-**********************************************
-## Little notes
-
-You might have seen that there are some invalid html if chekced it in the html valdator. It says this following is not valid : 
-```<dl>
-      <div>
-        <dd>
-        </dd>
-        <dt>
-        </dt>
-      </div>
-    </dl>
-```
-
-However, I looked it up on google and they said it is valid. [this-said-link-it-is-a-valid-html!](https://www.stefanjudis.com/today-i-learned/divs-are-valid-elements-inside-of-a-definition-list/);
