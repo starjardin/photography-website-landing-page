@@ -165,6 +165,9 @@ html {
   max-width: 1164px;
   margin: auto; }
 
+button {
+  cursor: pointer; }
+
 .header {
   background-color: #434CCC; }
 
@@ -235,15 +238,16 @@ html {
 
 .list--anchor {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   text-transform: capitalize;
   color: #ffffff;
   cursor: pointer;
-  transition: transform 0.3s; }
+  transition: transform 0.3s;
+  margin: 0.5rem 0; }
 
 .list--anchor:hover {
-  background-color: #FFDD78;
-  transform: scale(1.1);
+  color: #FFDD78;
+  transform: scale(1.01);
   transition: transform 0.3s;
   box-shadow: 1px 1px 1px black; }
 
@@ -254,9 +258,10 @@ html {
   height: 20px;
   line-height: 48px;
   margin-right: calc(100% * 15 / 375);
-  background-image: url("../images/icon_menu.svg");
+  background-image: url("../icons/icon_menu.svg");
   background-repeat: no-repeat;
-  background-position: right; }
+  background-position: right;
+  cursor: pointer; }
 
 label > span {
   display: none; }
@@ -299,7 +304,7 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url("../images/icon_arrow_left.svg");
+  background-image: url("../icons/icon_arrow_left.svg");
   background-size: 14px;
   background-position: left;
   margin-top: 17px;
@@ -336,27 +341,36 @@ img {
 
 .article__image-slider {
   padding-left: calc(100% * 15 / 375);
-  padding-right: calc(100% * 15 / 375);
-  overflow: hidden; }
+  padding-right: calc(100% * 15 / 375); }
 
 .article__image-slider__heading {
   display: none; }
-
-.images {
-  position: relative;
-  padding-bottom: calc(100% * 105 / 375);
-  overflow: visible; }
 
 .images picture > img {
   border-radius: 5px; }
 
 .pictures-container {
   display: flex;
-  position: absolute;
   padding-top: 10px;
-  right: -235%;
-  left: 0;
-  bottom: 0; }
+  overflow-x: scroll;
+  gap: .3rem; }
+  .pictures-container img {
+    width: 9rem; }
+
+.pictures-container::-webkit-scrollbar {
+  display: none; }
+
+.btn-prev, .btn-next {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  display: none; }
+
+.btn-prev {
+  left: 1rem; }
+
+.btn-next {
+  right: 1rem; }
 
 .pictures-container picture {
   width: calc(100% * 137 / 375);
@@ -373,10 +387,9 @@ img {
   .images {
     padding-bottom: 0; }
   .pictures-container {
-    display: flex;
-    position: initial;
-    width: 100%;
-    padding-top: 10px; }
+    gap: .2rem; }
+    .pictures-container img {
+      width: 100%; }
   .pictures-container picture:not(:nth-last-of-type(1)) {
     margin-inline-end: 9px; } }
 
@@ -457,7 +470,8 @@ img {
 
 .mineral__media--anchor {
   display: block;
-  width: 20px;
+  width: 25px;
+  height: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -465,25 +479,25 @@ img {
   transition: transform .3s; }
 
 .mineral__media--anchor.facebook {
-  background-image: url("../images/icon_facebook.svg"); }
+  background-image: url("../icons/icon_facebook.svg"); }
 
 .mineral__media--anchor.twitter {
-  background-image: url("../images/icon_twitter.svg"); }
+  background-image: url("../icons/icon_twitter.svg"); }
 
 .mineral__media--anchor.instagram {
-  background-image: url("../images/icon_instagram.svg"); }
+  background-image: url("../icons/icon_instagram.svg"); }
 
 .mineral__media--anchor:hover {
-  transform: scale(1.5); }
+  transform: scale(1.2); }
 
 .mineral__media--anchor.facebook:hover {
-  background-image: url("../images/icon_facebook_hover.svg"); }
+  background-image: url("../icons/icon_facebook_hover.svg"); }
 
 .mineral__media--anchor.twitter:hover {
-  background-image: url("../images/icon_twitter_hover.svg"); }
+  background-image: url("../icons/icon_twitter_hover.svg"); }
 
 .mineral__media--anchor.instagram:hover {
-  background-image: url("../images/icon_instagram_hover.svg"); }
+  background-image: url("../icons/icon_instagram_hover.svg"); }
 
 .article__updates {
   background-color: #FFDD78;
@@ -533,7 +547,8 @@ img {
   border: 1px solid #DADADA; }
 
 [name="email"] {
-  width: 100%; }
+  width: 100%;
+  padding-left: 1.2rem; }
 
 .btn.btn-submit {
   background-color: #434CCC;

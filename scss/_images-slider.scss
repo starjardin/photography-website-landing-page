@@ -4,20 +4,12 @@
 .article__image-slider {
   padding-left: $margin-inline;
   padding-right: $margin-inline;
-  overflow: hidden;
 }
 
 //hide the heading
 .article__image-slider__heading {
   display: none;
 }
-
-//set the image container to be position relative an show overflow
-.images {
-  position: relative;
-  padding-bottom: calc(100% * 105 / 375);
-  overflow: visible;
- }
 
 //creat small round in each corner of the images
 .images picture > img {
@@ -27,11 +19,30 @@
 //position absolute the images
 .pictures-container {
   display: flex;
-  position: absolute;
   padding-top: 10px;
-  right: -235%;
-  left: 0;
-  bottom: 0;
+  overflow-x: scroll;
+  gap: .3rem;
+   img {
+     width: 9rem;
+   }
+}
+.pictures-container::-webkit-scrollbar {
+  display: none;
+} 
+
+.btn-prev, .btn-next {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.btn-prev {
+  left: 1rem;
+}
+
+.btn-next {
+  right: 1rem;
 }
 
 //give the image container width to put the image in.
@@ -60,10 +71,10 @@
 
   //destroy the position absolute
   .pictures-container {
-    display: flex;
-    position: initial;
-    width: 100%;
-    padding-top: 10px;
+    gap: .2rem;
+    img {
+      width: 100%;
+    }
   }
 
 //add a little gat after each image apart from the last image

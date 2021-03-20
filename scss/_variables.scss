@@ -4,6 +4,10 @@
   @return url("../images/#{$filename}");
 };
 
+@function icon($filename) {
+  @return url("../icons/#{$filename}");
+};
+
 $text-decoration-none : none;
 $list-style-none : none;
 

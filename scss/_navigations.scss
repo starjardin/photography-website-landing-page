@@ -7,17 +7,18 @@
 //rule for the anchors
 .list--anchor {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   text-transform: capitalize;
   color: $primary-color;
   cursor: pointer;
   transition: transform 0.3s;
+  margin: 0.5rem 0;
 }
 
 //state list anchor hovered
 .list--anchor:hover {
-  background-color: $secondary-color;
-  transform: scale(1.1);
+  color: $secondary-color;
+  transform: scale(1.01);
   transition: transform 0.3s;
   box-shadow: 1px 1px 1px black;
 }
@@ -30,9 +31,10 @@
   height: 20px;
   line-height: 48px;
   margin-right: $margin-inline;
-  background-image: img("icon_menu.svg");
+  background-image: icon("icon_menu.svg");
   background-repeat: no-repeat;
   background-position: right;
+  cursor: pointer;
 }
 
 //hide the span in the label
@@ -84,7 +86,8 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   display: inline-block;
   @include font-wei-norm-siz-16;
   @include center-background;
-  background-image: img("icon_arrow_left.svg");
+  background-image: icon("icon_arrow_left.svg");
+  //background-image: url(../icons/icon_arrow_left.svg);
   background-size: 14px;
   background-position: left;
   margin-top: 17px;
