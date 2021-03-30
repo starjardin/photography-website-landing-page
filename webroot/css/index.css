@@ -180,13 +180,16 @@ button {
   padding-right: calc(100% * 15 / 375);
   margin: auto; }
 
-.header__heading {
+.header__heading a {
+  display: inline-block;
   font-family: "DM serif Display";
   text-transform: uppercase;
   color: #ffffff;
   margin-block: 16px;
+  font-weight: normal;
+  font-size: 24px;
   line-height: 32px;
-  font-size: 24px; }
+  text-decoration: none; }
 
 .masthead__heading,
 .masthead__description {
@@ -218,9 +221,7 @@ button {
 @media (min-width: 720px) {
   .masthead--container {
     max-width: 457px; }
-  .header__container {
-    align-items: flex-start; }
-  .header__heading {
+  .header__heading a {
     line-height: 48px;
     font-size: 40px;
     max-width: 50%; }
@@ -310,7 +311,14 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   margin-top: 17px;
   padding: 30px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+  transition: .3s;
+  font-size: 16px;
+  line-height: 24px; }
+
+.back-to-portfolio:hover {
+  color: #FFDD78;
+  transform: scale(1.1); }
 
 @media (min-width: 720px) {
   .header__navigation-lists.nav {
@@ -332,8 +340,9 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   [for="menu"] {
     display: none; }
   .list--anchor {
-    line-height: 48px;
-    font-size: 16px; } }
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: bold; } }
 
 img {
   width: 100%;
@@ -427,7 +436,7 @@ img {
 .article__mineral {
   padding-left: calc(100% * 15 / 375);
   padding-right: calc(100% * 15 / 375);
-  margin-bottom: 100px;
+  margin-bottom: 106px;
   margin-top: 61px; }
 
 .article__mineral__heading {
@@ -439,13 +448,13 @@ img {
 
 .article__mineral__main--paragraph.place {
   color: #000000;
-  padding-bottom: 43px;
+  padding-bottom: 40px;
   line-height: 32px;
   font-size: 18px; }
 
 .article__mineral__main--paragraph.experience {
   color: rgba(0, 0, 0, 0.5);
-  padding-bottom: 70px;
+  padding-bottom: 33px;
   line-height: 24px;
   font-size: 16px; }
 
@@ -498,6 +507,12 @@ img {
 
 .mineral__media--anchor.instagram:hover {
   background-image: url("../icons/icon_instagram_hover.svg"); }
+
+@media (min-width: 920px) {
+  .article__mineral__main--paragraph.experience {
+    padding-bottom: 60px; }
+  .article__mineral {
+    margin-bottom: 76px; } }
 
 .article__updates {
   background-color: #FFDD78;
@@ -590,7 +605,10 @@ img {
   [name="email"] {
     width: calc(100% * 342 / 570); }
   .btn.btn-submit {
-    width: calc(100% * 170 / 570); } }
+    width: calc(100% * 170 / 570); }
+  .article__updates {
+    padding-top: 76px;
+    padding-bottom: 104px; } }
 
 @media (min-width: 720px) {
   .section__flex {

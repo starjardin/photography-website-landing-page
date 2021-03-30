@@ -4,7 +4,7 @@
 .article__mineral {
   padding-left: $margin-inline;
   padding-right: $margin-inline;
-  margin-bottom: 100px;
+  margin-bottom: 106px;
   margin-top: 61px;
 }
 
@@ -20,7 +20,7 @@
 //text paragraph rule
 .article__mineral__main--paragraph.place {
   color: $black-color;
-  padding-bottom: 43px;
+  padding-bottom: 40px;
   line-height: 32px;
   font-size: 18px;
 }
@@ -28,7 +28,7 @@
 //text paragraph rule, semi-transparent
 .article__mineral__main--paragraph.experience {
   color: $half_black;
-  padding-bottom: 70px;
+  padding-bottom: 33px;
   line-height: 24px;
   font-size: 16px;
 }
@@ -93,4 +93,14 @@
 //change the background image on hovered state
 .mineral__media--anchor.instagram:hover {
   background-image: icon("icon_instagram_hover.svg");
+}
+
+
+@media (min-width: 920px) {
+  .article__mineral__main--paragraph.experience {
+    padding-bottom: 60px;
+  }
+  .article__mineral {
+    margin-bottom: 76px;
+  }
 }
