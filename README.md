@@ -87,5 +87,5 @@ You'll want to run the `scss:watch` task when you're developing this project.
 
 ## Contact
 
--   GitHub [@your-username](https://github.com/starjardin)
+-   GitHub [@startjardin](https://github.com/starjardin)
 

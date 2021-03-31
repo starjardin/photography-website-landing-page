@@ -4,7 +4,7 @@
 .article__mineral {
   padding-left: $margin-inline;
   padding-right: $margin-inline;
-  margin-bottom: 100px;
+  margin-bottom: 106px;
   margin-top: 61px;
 }
 
@@ -20,7 +20,7 @@
 //text paragraph rule
 .article__mineral__main--paragraph.place {
   color: $black-color;
-  padding-bottom: 43px;
+  padding-bottom: 40px;
   line-height: 32px;
   font-size: 18px;
 }
@@ -28,7 +28,7 @@
 //text paragraph rule, semi-transparent
 .article__mineral__main--paragraph.experience {
   color: $half_black;
-  padding-bottom: 70px;
+  padding-bottom: 33px;
   line-height: 24px;
   font-size: 16px;
 }
@@ -54,6 +54,7 @@
 .mineral__media--anchor {
   display: block;
   width: 20px;
+  height: 18px;
   @include center-background;
   background-size: contain;
   transition: transform .3s;
@@ -61,35 +62,45 @@
 
 //add background image to each item
 .mineral__media--anchor.facebook {
-  background-image: img("icon_facebook.svg");
+  background-image: icon("icon_facebook.svg");
 }
 
 //add background image to each item
 .mineral__media--anchor.twitter {
-  background-image:img("icon_twitter.svg");
+  background-image:icon("icon_twitter.svg");
 }
 
 //add background image to each item
 .mineral__media--anchor.instagram {
-  background-image: img("icon_instagram.svg");
+  background-image: icon("icon_instagram.svg");
 }
 
 //scale the items on hovered state
 .mineral__media--anchor:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 //change the background image on hovered state
 .mineral__media--anchor.facebook:hover {
-  background-image: img("icon_facebook_hover.svg");
+  background-image: icon("icon_facebook_hover.svg");
 }
 
 //change the background image on hovered state
 .mineral__media--anchor.twitter:hover {
-  background-image:img("icon_twitter_hover.svg");
+  background-image:icon("icon_twitter_hover.svg");
 }
 
 //change the background image on hovered state
 .mineral__media--anchor.instagram:hover {
-  background-image: img("icon_instagram_hover.svg");
+  background-image: icon("icon_instagram_hover.svg");
+}
+
+
+@media (min-width: 920px) {
+  .article__mineral__main--paragraph.experience {
+    padding-bottom: 60px;
+  }
+  .article__mineral {
+    margin-bottom: 76px;
+  }
 }

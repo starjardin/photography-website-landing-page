@@ -64,6 +64,7 @@
 //get the input have full width
 [name="email"] {
   width: 100%;
+  padding-left: 1.2rem;
 }
 
 //rule for the submit button
@@ -106,22 +107,27 @@
   }
 
 //get the form in one line
- .article__updates__form-feildeset  {
+  .article__updates__form-feildeset  {
     @include flex-row;
     flex-wrap: wrap;
     width: 45vw;
     margin-left: 5vw;
     max-width: 570px;
     margin-top: 3rem;
- }
+  }
 
 //set width to the input email
- [name="email" ] {
-   width: calc(100% * 342 / 570);
- }
+  [name="email" ] {
+    width: calc(100% * 342 / 570);
+  }
 
 //set width to the button
- .btn.btn-submit {
-   width: calc(100% * 170 / 570);
- }
+  .btn.btn-submit {
+    width: calc(100% * 170 / 570);
+  }
+  
+  .article__updates {
+    padding-top: 76px;
+    padding-bottom: 104px;
+  }
 }

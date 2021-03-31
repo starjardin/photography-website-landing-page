@@ -15,13 +15,16 @@
 }
 
 //rule for the text in the header
-.header__heading {
+.header__heading a {
+  display: inline-block;
   font-family: "DM serif Display";
   text-transform: uppercase;
   color: $primary-color;
   margin-block: 16px;
-  line-height: 32px;
+  font-weight: normal;
   font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
 }
 
 //masthead rules are down here
@@ -64,14 +67,9 @@
   .masthead--container {
     max-width: 457px;
   }
-
-//keep the nav stay at the top of the page
-  .header__container {
-    align-items: flex-start;
-  }
-
+  
 //increase the text in the header
-  .header__heading {
+  .header__heading a {
     line-height: 48px;
     font-size: 40px; 
     max-width: 50%;

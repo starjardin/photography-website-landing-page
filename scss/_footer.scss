@@ -3,7 +3,7 @@
 //add gap on top of the footer
 .main__footer,
 .footer__navigation--container {
-  padding-top: 77px;
+  padding-top: 75px;
 }
 
 //adding bg color and forground color
@@ -16,7 +16,6 @@
 }
 
 //adding gap at the bottom of the footer heading
-.main__footer__heading,
 .main__footer_personal-website {
   margin-bottom: 30px;
 }
@@ -27,6 +26,7 @@
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 //set color half black
@@ -62,6 +62,7 @@
 //adding a gap under each list
 .footer__experience--lists > li {
   margin-bottom: 27px;
+  cursor: pointer;
 }
 
 //set color and font to the paragraph that belongs to the image
@@ -130,8 +131,6 @@ picture ~ div {
 //state active for the anchor
 .footer__navigation--anchor:active {
   color: $black-color;
-  padding-top: 13px;
-  padding-bottom: 13px;
   font-weight: bold;
 }
 
@@ -151,18 +150,12 @@ picture ~ div {
 .footer__navigation--anchor:hover {
   color: $black-color;
   font-weight: bold;
-  transform: scale(1.1);
-  background-color: #cccccc;
-  padding-top: 9px;
-  padding-right: 9px;
-  padding-bottom: 9px;
-  padding-left: 9px;
 }
 
 //adding gap on toop and at the botton of this part
 .footer__experience {
   padding-top: 77px;
-  padding-bottom: 77px;
+  padding-bottom: 70px;
 }
 
 //if the screen is bigger than 720px
@@ -174,6 +167,7 @@ picture ~ div {
   }
 
   .main__footer {
+    padding-top: 72px;
     padding-bottom: 75px;
   }
 
@@ -193,6 +187,7 @@ picture ~ div {
   .footer__experience {
     flex-basis: 40%;
     padding-top: 0;
+    padding-bottom: 72px;
   }
 
 //share room for each little componants
