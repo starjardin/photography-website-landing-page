@@ -372,7 +372,9 @@ img {
   height: calc(100% * 85 / 375); }
 
 .pictures-container picture {
-  opacity: .5;
+  opacity: .5; }
+
+.pictures-container picture:not(:nth-of-type(1)) {
   margin-left: 9px; }
 
 .pictures-container picture:hover {

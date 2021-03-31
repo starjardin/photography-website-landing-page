@@ -37,8 +37,12 @@
 }
 
 //blur the images and gaps in front
+
 .pictures-container picture {
   opacity: .5;
+}
+
+.pictures-container picture:not(:nth-of-type(1)) {
   margin-left: 9px;
 }
 

@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://starjardin.github.io/front-end-finals/">
+    <a href="https://tantely-photograph-landing-page.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -29,7 +29,7 @@
 ## Overview
 
 -  You can see the demo and the Code in these following links 
-  <a href="https://starjardin.github.io/front-end-finals/">
+  <a href="https://tantely-photograph-landing-page.vercel.app/">
     Demo
   </a> and
   <a href="https://github.com/starjardin/front-end-finals">
