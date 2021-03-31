@@ -248,9 +248,7 @@ button {
 
 .list--anchor:hover {
   color: #FFDD78;
-  transform: scale(1.01);
-  transition: transform 0.3s;
-  box-shadow: 1px 1px 1px black; }
+  transition: transform 0.3s; }
 
 [for="menu"] {
   order: 3;
@@ -369,23 +367,11 @@ img {
 .pictures-container::-webkit-scrollbar {
   display: none; }
 
-.btn-prev, .btn-next {
-  position: absolute;
-  top: 35%;
-  transform: translateY(-50%);
-  display: none; }
-
-.btn-prev {
-  left: 1rem; }
-
-.btn-next {
-  right: 1rem; }
-
 .pictures-container picture {
   width: calc(100% * 137 / 375);
   height: calc(100% * 85 / 375); }
 
-.pictures-container picture:not(:nth-of-type(1)) {
+.pictures-container picture {
   opacity: .5;
   margin-left: 9px; }
 

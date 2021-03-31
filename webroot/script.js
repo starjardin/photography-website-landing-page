@@ -15,19 +15,6 @@ function showImage (e) {
   bigImage.innerHTML = `
   <img src="${sourceImage}" alt="${altImage}">
   `
-  //take the first pic
-  const firstPic = images.querySelector(".carvings");
-  const firstImg = firstPic.querySelector("img");
-  //find the parent of the imge got click
-  const currentPic = img.closest("picture");
-  //html of the image got clicked
-  currentPic.innerHTML = `
-  <img src="${firstImg.src}" alt="${altImage}">
-  `
-  //html for the first image
-  firstPic.innerHTML = `
-  <img src="${sourceImage}" alt="${altImage}">
-  `
 }
 //event listener
 pictures.forEach(picture => picture.addEventListener("click", showImage))

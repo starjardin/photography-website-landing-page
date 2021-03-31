@@ -18,9 +18,7 @@
 //state list anchor hovered
 .list--anchor:hover {
   color: $secondary-color;
-  transform: scale(1.01);
   transition: transform 0.3s;
-  box-shadow: 1px 1px 1px black;
 }
 
 //rule for the menu

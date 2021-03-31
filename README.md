@@ -37,7 +37,6 @@
   </a>
 
 -  I learned a lot about using node sass, it was hard to get it ready to work at the first time because I never used it in my past projects. What I really liked about this project was using scss, I only new how to style a page using css before this project but now scss is a great tool to have in the pocket, it saves you tones of times because it makes your code DRY. What is nice about scss is that you can impliment those cool things that could not do in css. With scss you can use css variable, mixing, function, and so fourth.
--  I started to use I little bit of javascript in this project of which I am proud.
 
 ## Dependencies
 
@@ -49,7 +48,7 @@
 
 We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
 
-1. `npm i`
+1. `npm node-sass`
 
 ## Getting started
 
