@@ -479,8 +479,8 @@ img {
 
 .mineral__media--anchor {
   display: block;
-  width: 25px;
-  height: 20px;
+  width: 20px;
+  height: 18px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -630,7 +630,7 @@ img {
 
 .main__footer,
 .footer__navigation--container {
-  padding-top: 77px; }
+  padding-top: 75px; }
 
 .main__footer {
   background-color: #ffffff;
@@ -639,7 +639,6 @@ img {
   padding-right: calc(100% * 15 / 375);
   overflow: hidden; }
 
-.main__footer__heading,
 .main__footer_personal-website {
   margin-bottom: 30px; }
 
@@ -647,7 +646,8 @@ img {
   font-family: "DM serif Display";
   font-size: 24px;
   line-height: 32px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 22px; }
 
 .footer__componants,
 .footer__navigation--anchor,
@@ -682,7 +682,8 @@ img {
   align-items: flex-start; }
 
 .footer__experience--lists > li {
-  margin-bottom: 27px; }
+  margin-bottom: 27px;
+  cursor: pointer; }
 
 .footer__experience--lists > li p {
   font-size: 16px;
@@ -733,8 +734,6 @@ picture ~ div {
 
 .footer__navigation--anchor:active {
   color: #000000;
-  padding-top: 13px;
-  padding-bottom: 13px;
   font-weight: bold; }
 
 .footer__navigation--anchor:visited {
@@ -748,17 +747,11 @@ picture ~ div {
 
 .footer__navigation--anchor:hover {
   color: #000000;
-  font-weight: bold;
-  transform: scale(1.1);
-  background-color: #cccccc;
-  padding-top: 9px;
-  padding-right: 9px;
-  padding-bottom: 9px;
-  padding-left: 9px; }
+  font-weight: bold; }
 
 .footer__experience {
   padding-top: 77px;
-  padding-bottom: 77px; }
+  padding-bottom: 70px; }
 
 @media (min-width: 720px) {
   .footer--container.container {
@@ -767,6 +760,7 @@ picture ~ div {
     justify-content: space-between;
     flex-wrap: wrap; }
   .main__footer {
+    padding-top: 72px;
     padding-bottom: 75px; }
   .main__footer__aboutthewriter {
     flex-basis: 35%;
@@ -776,7 +770,8 @@ picture ~ div {
     padding-top: 0; }
   .footer__experience {
     flex-basis: 40%;
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 72px; }
   .footer__componants {
     display: flex;
     flex-direction: row;
