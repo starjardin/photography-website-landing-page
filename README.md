@@ -17,7 +17,6 @@
 # Table of Contents
 
 -   [Overview](#overview)
--   [Features](#features)
 -   [Dependencies](#dependencies)
 -   [Install](#install)
 -   [Getting started](#getting-started)
