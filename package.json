@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/onja-org/front-end-finals#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^6.0.1"
   }
 }
