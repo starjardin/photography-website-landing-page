@@ -1,12 +1,10 @@
 @import "variables";
 
-//add gap on top of the footer
 .main__footer,
 .footer__navigation--container {
   padding-top: 75px;
 }
 
-//adding bg color and forground color
 .main__footer {
   background-color: $primary-color;
   color: $black-color;
@@ -15,12 +13,10 @@
   overflow: hidden;
 }
 
-//adding gap at the bottom of the footer heading
 .main__footer_personal-website {
   margin-bottom: 30px;
 }
 
-//set fonts on the heading
 .main__footer__heading {
   font-family: "DM serif Display";
   font-size: 24px;
@@ -29,75 +25,63 @@
   margin-bottom: 22px;
 }
 
-//set color half black
-.footer__componants,
+.footer__components,
 .footer__navigation--anchor,
 .main__footer_personal-website {
   color: $half-black;
 }
 
-//font-size and line-height
 .main__footer_personal-website {
   line-height: 24px;
   font-size: 16px;
 }
 
-//delete all default style on nav
 .footer__navigation {
   @include reset-nav;
 }
 
-//delete all default style on the list
 .footer__experience--lists {
   @include reset-link-list;
 }
 
-//aling the image and its paragraph horizontaly
-.footer__experience--list { 
+.footer__experience--list {
   @include flex-row;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-//adding a gap under each list
 .footer__experience--lists > li {
   margin-bottom: 27px;
   cursor: pointer;
 }
 
-//set color and font to the paragraph that belongs to the image
 .footer__experience--lists > li p {
   font-size: 16px;
   line-height: 24px;
   color: $half-black;
 }
 
-//adding font style to the time tag
 .footer__experience--lists > li time {
   font-size: 12px;
   line-height: 24px;
   color: $black-color;
 }
 
-//adding gap at the right edge of the image
 picture ~ div {
   margin-left: 32px;
 }
 
-//set width to the picture in the footer
 .footer--picture {
   width: calc(100% * 70 / 375);
   height: calc(100% * 47 / 375);
   min-width: 70px;
 }
 
-//make a small round circle at the edge of the images
 .footer--picture > img {
   border-radius: 5px;
 }
 
-//addign gaps at the top, right,left and bottom if this componants
-.footer__componants {
+.footer__components {
   display: block;
   padding-top: 29px;
   padding-bottom: 29px;
@@ -106,9 +90,8 @@ picture ~ div {
   position: relative;
 }
 
-//add a line trough in the footer
-.footer__componants::before {
-  content: '';
+.footer__components::before {
+  content: "";
   position: absolute;
   top: 0;
   left: -1.5rem;
@@ -121,46 +104,32 @@ picture ~ div {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-//display inline block to each anchor
 .footer__navigation--anchor {
   display: inline-block;
   padding: 9px;
   transition: 0.2s;
 }
 
-//state active for the anchor
 .footer__navigation--anchor:active {
   color: $black-color;
   font-weight: bold;
 }
 
-//color for visited link
 .footer__navigation--anchor:visited {
   color: $brand-color;
 }
 
-.footer__navigation--anchor.home {
-  padding-bottom: 17px;
-  color: $black-color;
-  font-weight: 700;
-  padding-top: 0;
-}
-
-//state hovered in the anchors
 .footer__navigation--anchor:hover {
   color: $black-color;
   font-weight: bold;
 }
 
-//adding gap on toop and at the botton of this part
 .footer__experience {
   padding-top: 77px;
   padding-bottom: 70px;
 }
 
-//if the screen is bigger than 720px
 @media (min-width: $breakpoint) {
-  //make everything in the footer at one line horizontale
   .footer--container.container {
     @include flex-row;
     flex-wrap: wrap;
@@ -171,27 +140,23 @@ picture ~ div {
     padding-bottom: 75px;
   }
 
-//share room for each little componants
   .main__footer__aboutthewriter {
     flex-basis: 35%;
     max-width: 270px;
   }
 
-//share room for each little componants
   .footer__navigation--container {
     flex-basis: 25%;
     padding-top: 0;
   }
 
-//share room for each little componants
   .footer__experience {
     flex-basis: 40%;
     padding-top: 0;
     padding-bottom: 72px;
   }
 
-//share room for each little componants
-  .footer__componants {
+  .footer__components {
     @include flex-row;
     flex-basis: 100%;
   }

@@ -4,7 +4,6 @@
   @include reset-nav;
 }
 
-//rule for the anchors
 .list--anchor {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -15,13 +14,11 @@
   margin: 0.5rem 0;
 }
 
-//state list anchor hovered
 .list--anchor:hover {
   color: $secondary-color;
   transition: transform 0.3s;
 }
 
-//rule for the menu
 [for="menu"] {
   order: 3;
   display: block;
@@ -35,18 +32,15 @@
   cursor: pointer;
 }
 
-//hide the span in the label
 label > span {
   display: none;
 }
 
-//hide the checkbox and change its order
 [type="checkbox"][name="menu"] {
   order: 2;
   opacity: 0;
 }
 
-//rule for the navigation. close state
 .header__navigation {
   background-color: $brand-color;
   position: absolute;
@@ -56,17 +50,15 @@ label > span {
   bottom: 0;
   width: 180px;
   height: 100vh;
-  box-shadow: 0 0 50px rgba(0,0,0,.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: translateY(-210%);
   transition: transform 0.5s;
 }
 
-//checkbox is checked show the navv list
 body [type="checkbox"]:checked ~ .header__navigation {
   transform: translateY(0);
 }
 
-//if checkbox is checked, label is filling the viewport
 body [type="checkbox"]:checked ~ .header__navigation label {
   position: absolute;
   z-index: 3;
@@ -76,10 +68,9 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   left: 180px;
   height: 100vh;
   width: calc(100vw - (180px + 20px));
-  background: rgba(0,0,0,.25);
+  background: rgba(0, 0, 0, 0.25);
 }
 
-//here is going back to portfolio
 .back-to-portfolio {
   display: inline-block;
   @include font-wei-norm-siz-16;
@@ -91,7 +82,7 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   padding: 30px;
   text-decoration: $text-decoration-none;
   color: rgba(0, 0, 0, 0.5);
-  transition: .3s;
+  transition: 0.3s;
   font-size: 16px;
   line-height: 24px;
 }
@@ -101,15 +92,12 @@ body [type="checkbox"]:checked ~ .header__navigation label {
   transform: scale(1.1);
 }
 
-//@media (720px)
 @media (min-width: $breakpoint) {
-  //align the nav list on top of the header
   .header__navigation-lists.nav {
     @include flex-row;
     flex-wrap: wrap;
   }
 
-//rule for the navigation block on desktop
   .header__navigation {
     padding: 0;
     background: none;
@@ -121,18 +109,15 @@ body [type="checkbox"]:checked ~ .header__navigation label {
     width: auto;
   }
 
-//kill the checkbox on desktop
   [type="checkbox"] {
     display: none;
   }
 
-//destroy the label on desktop
   [for="menu"] {
     display: none;
   }
 
-//rule for the navigation list on desktop
-  .list--anchor  {
+  .list--anchor {
     line-height: 24px;
     font-size: 16px;
     font-weight: bold;

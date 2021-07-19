@@ -1,11 +1,9 @@
 @import "variables";
 
-//color of the head
 .header {
   background-color: $brand-color;
 }
 
-//rule for the head, align the items horzontaly
 .header__container {
   @include flex-row;
   align-items: center;
@@ -14,7 +12,6 @@
   margin: auto;
 }
 
-//rule for the text in the header
 .header__heading a {
   display: inline-block;
   font-family: "DM serif Display";
@@ -27,7 +24,6 @@
   text-decoration: none;
 }
 
-//masthead rules are down here
 .masthead__heading,
 .masthead__description {
   font-style: normal;
@@ -39,7 +35,6 @@
   padding-right: $margin-inline;
 }
 
-//rule for the text in the masthead
 .masthead__heading {
   font-weight: 400;
   font-family: "DM serif Display";
@@ -50,7 +45,6 @@
   margin-bottom: 79px;
 }
 
-//text masthead description rule
 .masthead__description {
   font-weight: 400;
   font-size: 18px;
@@ -62,20 +56,17 @@
   margin-block-end: 0px;
 }
 
-//if the screen get bigger than 720px
 @media (min-width: $breakpoint) {
   .masthead--container {
     max-width: 457px;
   }
-  
-//increase the text in the header
+
   .header__heading a {
     line-height: 48px;
-    font-size: 40px; 
+    font-size: 40px;
     max-width: 50%;
   }
 
-//increase the text in the masthead
   .masthead__heading {
     font-size: 72px;
     line-height: 80px;

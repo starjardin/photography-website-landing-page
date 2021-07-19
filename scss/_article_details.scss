@@ -1,25 +1,21 @@
 @import "variables";
 
-//add gaps in both right and left side
 .article__details {
   padding-left: $margin-inline;
   padding-right: $margin-inline;
   padding-top: 95px;
 }
 
-//hide the header 
 .article__details__heading {
   display: none;
 }
 
-//display grid to get two colums. gap of 2rem
 .article__details__definitions--lists {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
 }
 
-//rule for the text inside dt and dd
 .article__details__definitions--lists dd,
 .article__details__definitions--lists dt {
   line-height: 24px;
@@ -27,12 +23,10 @@
   font-style: normal;
 }
 
-//dt is semi-transparent
 .article__details__definitions--lists dt {
   color: $half-black;
 }
 
-//dds are fully black and bold 
 .article__details__definitions--lists dd {
   margin: 0;
   font-weight: bold;
@@ -42,4 +36,11 @@
 
 .article__details__definition__list span {
   display: block;
+}
+
+@media (min-width: $breakpoint) {
+  .flex-span {
+    display: flex;
+    gap: 5px;
+  }
 }

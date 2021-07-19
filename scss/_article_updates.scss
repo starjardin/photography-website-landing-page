@@ -1,6 +1,5 @@
 @import "variables";
 
-//added gaps top, left, bottom and right, as well as setting background color
 .article__updates {
   background-color: $secondary-color;
   padding-top: 65px;
@@ -9,13 +8,11 @@
   padding-right: $margin-inline;
 }
 
-//set one column of flex in order to set the order of the element (ex: .article__updates {oreder: 1}
 .article__updates__header {
   display: flex;
   flex-direction: column;
 }
 
-//set fonts for the title.
 .article__updates__heading {
   order: 2;
   font-family: "DM Serif Display";
@@ -26,7 +23,6 @@
   margin-top: 20px;
 }
 
-//set fonts and order to this paragraph
 .latest {
   order: 1;
   text-transform: uppercase;
@@ -34,7 +30,6 @@
   line-height: 24px;
 }
 
-//rule for the email label
 [for="email"] {
   font-size: 12px;
   line-height: 16px;
@@ -44,13 +39,11 @@
   margin-bottom: 16px;
 }
 
-//switch of the border in the fieldset
-.article__updates__form-feildeset {
+.article__updates__form-fieldset {
   border: none;
   padding: 0;
 }
 
-//set font in the input and the button text because they don't inherit ffrom their parrents.
 [name="email"],
 .btn.btn-submit {
   display: block;
@@ -58,16 +51,14 @@
   font-family: "DM sans";
   border-radius: 5px;
   box-sizing: border-box;
-  border: 1px solid #DADADA;
+  border: 1px solid #dadada;
 }
 
-//get the input have full width
 [name="email"] {
   width: 100%;
   padding-left: 1.2rem;
 }
 
-//rule for the submit button
 .btn.btn-submit {
   background-color: $brand-color;
   width: calc(100% * 170 / 357);
@@ -78,24 +69,20 @@
   transition: 0.1s;
 }
 
-//rule for the button on hovered
 .btn.btn-submit:hover {
   background-color: rgba(0, 0, 255, 0.5);
   transform: scale(1.1);
   box-shadow: 2px 2px 2px black;
 }
 
-//width widder than 720px.
 @media (min-width: $breakpoint) {
-  //set the content in this article in one line horizontale
   .article__updates--container {
-   @include flex-row;
-   align-items: flex-start;
+    @include flex-row;
+    align-items: flex-start;
   }
 
-//reset, delete all the margin here
   [for="email"],
-  [name="email" ],
+  [name="email"],
   .btn.btn-submit {
     margin: 0;
   }
@@ -106,8 +93,7 @@
     flex-basis: 100%;
   }
 
-//get the form in one line
-  .article__updates__form-feildeset  {
+  .article__updates__form-fieldset {
     @include flex-row;
     flex-wrap: wrap;
     width: 45vw;
@@ -116,16 +102,14 @@
     margin-top: 3rem;
   }
 
-//set width to the input email
-  [name="email" ] {
+  [name="email"] {
     width: calc(100% * 342 / 570);
   }
 
-//set width to the button
   .btn.btn-submit {
     width: calc(100% * 170 / 570);
   }
-  
+
   .article__updates {
     padding-top: 76px;
     padding-bottom: 104px;
