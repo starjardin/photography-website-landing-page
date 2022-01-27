@@ -15,25 +15,12 @@
 
 # Table of Contents
 
--   [Overview](#overview)
 -   [Dependencies](#dependencies)
 -   [Install](#install)
 -   [Design](#design)
 -   [How to use](#how-to-use)
 -   [Development](#development)
 -   [Contact](#contact)
-
-## Overview
-
--  You can see the demo and the Code in these following links 
-  <a href="https://tantely-photograph-landing-page.vercel.app/">
-    Demo
-  </a> and
-  <a href="https://github.com/starjardin/front-end-finals">
-    Solution
-  </a>
-
--  I learned a lot about using node-sass, it was hard to get it ready to work at the first time because I never used it in my past projects. What I really liked about this project was using SCSS, I only new how to style a page using css before this project but now SCSS is a great tool to have in the pocket, it saves you tones of times because it makes your code DRY. What is nice about scss is that you can impliment those cool things that could not do in css. With SCSS you can use CSS variable, mixing, function, and so fourth.
 
 ## Dependencies
 
