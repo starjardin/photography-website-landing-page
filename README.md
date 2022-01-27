@@ -19,7 +19,6 @@
 -   [Overview](#overview)
 -   [Dependencies](#dependencies)
 -   [Install](#install)
--   [Getting started](#getting-started)
 -   [Design](#design)
 -   [How to use](#how-to-use)
 -   [Development](#development)
@@ -48,8 +47,6 @@
 We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
 
 1. `npm node-sass`
-
-## Getting started
 
 ### Design
 
