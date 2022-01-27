@@ -58,7 +58,6 @@ You can find the design:
 - online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
 - by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
 
-### Sass
 
 ## How To Use
 We'll be using the `scss` folder for all our Sass files.
