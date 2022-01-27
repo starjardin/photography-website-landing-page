@@ -1,4 +1,4 @@
-# Front-end final mockup-to-website project
+# Photography website landing page
 
 <h1 align="center">Photograph</h1>
 
