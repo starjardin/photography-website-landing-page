@@ -35,7 +35,7 @@
     Solution
   </a>
 
--  I learned a lot about using node sass, it was hard to get it ready to work at the first time because I never used it in my past projects. What I really liked about this project was using scss, I only new how to style a page using css before this project but now scss is a great tool to have in the pocket, it saves you tones of times because it makes your code DRY. What is nice about scss is that you can impliment those cool things that could not do in css. With scss you can use css variable, mixing, function, and so fourth.
+-  I learned a lot about using node sass, it was hard to get it ready to work at the first time because I never used it in my past projects. What I really liked about this project was using SCSS, I only new how to style a page using css before this project but now SCSS is a great tool to have in the pocket, it saves you tones of times because it makes your code DRY. What is nice about scss is that you can impliment those cool things that could not do in css. With SCSS you can use CSS variable, mixing, function, and so fourth.
 
 ## Dependencies
 
@@ -68,7 +68,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/starjardin/photography-website-landing-page.git
 
 # Install dependencies
 $ npm install
