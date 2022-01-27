@@ -1,6 +1,5 @@
 # Photography website landing page
 
-<h1 align="center">Photograph</h1>
 
 <div align="center">
   <h3>
