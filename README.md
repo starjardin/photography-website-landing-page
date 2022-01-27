@@ -16,7 +16,6 @@
 # Table of Contents
 
 -   [Dependencies](#dependencies)
--   [Install](#install)
 -   [Design](#design)
 -   [How to use](#how-to-use)
 -   [Development](#development)
@@ -28,17 +27,10 @@
 - Figma
 - Figma Font Helper
 
-## Install
 
-We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
+## Design
 
-1. `npm node-sass`
-
-### Design
-
-You can find the design:
-
-- online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
+- You can find the design [here](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1)
 
 
 ## How To Use
